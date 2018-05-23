@@ -54,14 +54,14 @@ body {
 /* Change the color of links on hover */
 
 .topnav a:hover {
-    background-color: lightblue;
+    background-color: #78CCDE;
     color: black;
 }
 
 /* Add an active class to highlight the current page */
 
 .active {
-    background-color: lightblue;
+    background-color: #78CCDE;
     color: white;
 }
 
@@ -82,8 +82,15 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.omtekst {
+    max-width: 300px;
+}
+
 #omflasken h1 {
     grid-column: 2;
+
+    margin: 30px auto;
+
 
 
 }
@@ -106,18 +113,65 @@ body {
 #design h1 {
     grid-column: 1;
     max-width: 350px;
-    margin: 30px;
+    margin: 30px auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
 }
 
 #design p {
     grid-column: 1;
     max-width: 350px;
-    margin: 30px;
+    margin: 30px auto;
 }
 
 #design img {
     grid-column: 2;
     width: 100%;
+}
+
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 /******************Design slut*******************/
@@ -128,19 +182,41 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: #6A90FF;
-    height: 300px;
+    padding: 40px;
+
 }
 
-#bpainfo {
+#info p {
+    color: #4978FF;
+
+}
+
+#info img {
+    width: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#frost img {
+    width: 15vw;
+
+}
+
+#bpa {
     grid-column: 1;
+    margin: 20px;
 }
 
 #frost {
     grid-column: 2;
+    margin: 20px;
 }
 
 #dryp {
     grid-column: 3;
+    margin: 20px;
 }
 
 /******************BPA slut*******************/
