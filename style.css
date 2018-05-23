@@ -84,13 +84,12 @@ body {
 
 #omflasken h1 {
     grid-column: 2;
-    max-width: 350px;
+
 
 }
 
 #omflasken p {
     grid-column: 2;
-    max-width: 350px;
 
 
 }
@@ -125,12 +124,42 @@ body {
 
 /******************BPA*******************/
 
-#bpa {
+#info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    background-color: #6A90FF;
+    height: 300px;
+}
+
+#bpainfo {
+    grid-column: 1;
+}
+
+#frost {
+    grid-column: 2;
+}
+
+#dryp {
+    grid-column: 3;
 }
 
 /******************BPA slut*******************/
+
+/******************Køb*******************/
+
+#koeb {
+    height: 300px;
+}
+
+/******************Køb slut*******************/
+
+/******************Insta*******************/
+
+#insta {
+    height: 300px;
+}
+
+/******************isnta slut*******************/
 
 /******************Reveiew*******************/
 
@@ -138,6 +167,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr, 2fr;
+    background-color: #1d58ff;
 }
 
 #review h1 {
@@ -160,6 +190,13 @@ body {
 }
 
 /******************Reveiew slut*******************/
+
+/*******************footer************************/
+
+footer {
+    background-color: #1746cc;
+    height: 300px;
+}
 
 /*********** media ************************/
 
