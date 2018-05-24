@@ -6,102 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-
-
-
-    <header></header>
-    <section id="banner">
-
-    </section>
-
-
-    <div class="topnav" id="navbar">
-        <a href="#forside" class="active">Forside</a>
-        <a href="#omos">Om os</a>
-        <a href="#produkt">Produkt</a>
-        <a href="#shop">Shop</a>
-        <a href="#kontakt">Kontakt</a>
-
-        <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-    </div>
-
-    <section id="omflasken">
-        <video></video>
-        <div class="omtekst">
-            <h1>Lidt om Vandret vandflaske</h1>
-            <p>Genbrugelige flade flasker, som passer i din taske, står og ligger stabilt, samt hjælper med at reducere plastikspild! </p>
+    <header>
+        <section id="header-top"><a href="https://www.linkedin.com/company/vandret/"><img src="img/vandret-07.png" class="icons"></a><a hreft="https://www.facebook.com/vandretflasker"><img src="img/vandret-06.png" class="icons"></a><a href="https://www.instagram.com/vandretflasker/"><img src="img/vandret-05.png" class="icons"></a><a href=""><img src="img/vandret-08.png" class="cart"></a><img src="img/vandret_logo.png" class="logo"></section>
+        <div class="topnav" id="navbar">
+            <a href="#forside" class="active">Forside</a>
+            <a href="#omos">Om os</a>
+            <a href="#produkt">Produkt</a>
+            <a href="#shop">Shop</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                <i class="fa fa-bars"></i></a>
         </div>
+        <section id="SoMe" class="top">
+            <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" class="button">SHOP</a></p>
+        </section>
+    </header>
+    <main>
+        <section id="video_bg">
+            <video autoplay muted loop id="myVideo">
+  <source src="video/Drink.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
-    </section>
-    <section id="design">
-        <h1>Design</h1>
-        <p>I swiped it from the old lady's liquor cabinet. Yeah well, you shouldn't drink. Why not? Because, you might regret it later in life. Marty, don't be such a square. Everybody who's anybody drinks.</p>
-
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <img src="img/flaske_01.png" style="width:100%">
+            <div class="content">
+                <h1>Vandret Vandflasker </h1>
+                <p>Genbrugelige flade flasker, som passer i din taske, står og ligger stabilt, samt hjælper med at reducere plastikspild! </p>
+                <button id="myBtn" onclick="myFunction()">SHOP</button>
             </div>
-            <div class="mySlides fade">
-                <img src="img/flaske_03.png" style="width:100%">
+
+
+        </section>
+        <section id="omflasken">
+            <div class="container">
+                <video id="video_left"></video>
+                <div class="omtekst">
+                    <h1>Lidt om Vandret vandflaske</h1>
+                    <p>Genbrugelige flade flasker, som passer i din taske, står og ligger stabilt, samt hjælper med at reducere plastikspild! </p>
+                </div>
             </div>
-            <div class="mySlides fade">
-                <img src="img/flaske_02.png" style="width:100%">
+        </section>
+        <section id="design">
+            <div class="container">
+                <div id="design_left">
+                    <h1>Design</h1>
+                    <p>I swiped it from the old lady's liquor cabinet. Yeah well, you shouldn't drink. Why not? Because, you might regret it later in life. Marty, don't be such a square. Everybody who's anybody drinks.</p>
+                </div>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="img/flaske_01.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/flaske_03.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/flaske_02.png" style="width:100%">
+                    </div>
+                </div>
             </div>
-        </div>
-
-
-
-
-    </section>
-    <section id="info">
-
-        <div id="bpa">
-            <img src="img/vandret-02.png" alt="bpa">
-            <p>(We cut to the garage, where Marty is listening.) (v.o) When are you coming home? The dance! I'll get home when I get home! (He enters the garage.) (Marty hides in the back of the car.)</p>
-        </div>
-        <div id="frost">
-            <img src="img/vandret-03.png" alt="frostfri">
-            <p>(We cut to the garage, where Marty is listening.) (v.o) When are you coming home? The dance! I'll get home when I get home! (He enters the garage.) (Marty hides in the back of the car.)</p>
-        </div>
-        <div id="dryp">
-            <img src="img/vandret-04.png" alt="drypsikker">
-            <p>(We cut to the garage, where Marty is listening.) (v.o) When are you coming home? The dance! I'll get home when I get home! (He enters the garage.) (Marty hides in the back of the car.)</p>
-        </div>
-
-
-
-    </section>
-    <section id="koeb"></section>
-    <section id="insta"></section>
-    <section id="review">
-
-        <h1>Review fra kunderne</h1>
-        <p id="left">No, I'm not talking about George McFly. I'm talking about his kid. (In the background, a car lands outside the Cafe.) Your old man, Marty McFly Senior, the man who took his life and flushed it completely down the toilet. I did? (covering) Uh, I mean, I mean he did? (The cafe doors open and Griff enters. Griff is Biff's grandson, and he's even meaner than Biff was in 1955. Griff is wearing tough-guy clothes and a grey, metallic hat.) Hey Gramps, I told you 2 coats of wax on my car, not just 1. (gets up) Hey, hey, I just put the 2nd coat on last week.</p>
-        <p id="right">Holy shit! Hey Doc! Clayton Ravine was named after a teacher. They say she fell in there a hundred years ago. A hundred years ago! That's this year! Every kid in school knows that story because we all have teachers we'd like to see fall into the ravine. Great Scott! (he stops his horse) Then she was supposed to go over in that wagon...and now, I may have seriously altered history. Look, Doc, what's the worst that could happen, huh? So they don't name the ravine after her. Let's just get the Delorean ready and get the hell out of here.</p>
-    </section>
+        </section>
+        <section id="info">
+            <div class="container_3fr">
+                <div id="bpa">
+                    <img class="info_bpa" src="img/vandret-02.png" alt="bpa">
+                    <p>(We cut to the garage, where Marty is listening.) (v.o) When are you coming home? The dance! I'll get home when I get home! (He enters the garage.) (Marty hides in the back of the car.)</p>
+                </div>
+                <div id="frost">
+                    <img class="info_frost" src="img/vandret-03.png" alt="frostfri">
+                    <p>(We cut to the garage, where Marty is listening.) (v.o) When are you coming home? The dance! I'll get home when I get home! (He enters the garage.) (Marty hides in the back of the car.)</p>
+                </div>
+                <div id="dryp">
+                    <img class="info_dryp" src="img/vandret-04.png" alt="drypsikker">
+                    <p>(We cut to the garage, where Marty is listening.) (v.o) When are you coming home? The dance! I'll get home when I get home! (He enters the garage.) (Marty hides in the back of the car.)</p>
+                </div>
+            </div>
+        </section>
+        <section id="koeb">
+            <div class="container"></div>
+        </section>
+        <section id="insta">
+            <div class="container"></div>
+        </section>
+        <section id="review">
+            <h1 class="center">Review fra kunderne</h1>
+            <div class="container">
+                <p id="left">No, I'm not talking about George McFly. I'm talking about his kid. (In the background, a car lands outside the Cafe.) Your old man, Marty McFly Senior, the man who took his life and flushed it completely down the toilet. I did? (covering) Uh, I mean, I mean he did? (The cafe doors open and Griff enters. Griff is Biff's grandson, and he's even meaner than Biff was in 1955. Griff is wearing tough-guy clothes and a grey, metallic hat.) Hey Gramps, I told you 2 coats of wax on my car, not just 1. (gets up) Hey, hey, I just put the 2nd coat on last week.</p>
+                <p id="right">Holy shit! Hey Doc! Clayton Ravine was named after a teacher. They say she fell in there a hundred years ago. A hundred years ago! That's this year! Every kid in school knows that story because we all have teachers we'd like to see fall into the ravine. Great Scott! (he stops his horse) Then she was supposed to go over in that wagon...and now, I may have seriously altered history. Look, Doc, what's the worst that could happen, huh? So they don't name the ravine after her. Let's just get the Delorean ready and get the hell out of here.</p>
+            </div>
+        </section>
+    </main>
     <footer>
-        <div class="footerboks">
+        <div class="container">
             <div id="kontaktinfo"></div>
             <div id="siderne"></div>
             <div id="nyhedsbrev"></div>
-
         </div>
-
+        <div id="bottom-footer">
+            <p>@VANDRET VANDFLASKER SIDEN 2017</p>
+        </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="java.js"></script>
+    <!--
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
 
-
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+</script>
+-->
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="java.js"></script>
 
 </html>
