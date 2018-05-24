@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="video/6/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="video/6/mcVideoPlugin.js" type="text/javascript"></script>
+    <script src="video/6/js-image-slider.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -42,11 +46,26 @@
 
         </section>
         <section id="omflasken">
-            <div class="container">
-                <video id="video_left"></video>
+            <div class="container" style="margin-top:5%;">
+                <div id="sliderFrame">
+                    <div id="slider">
+                        <video preload="none" content="Forsikring, Billig, Studerende, Yndlings" data-image="img/video_img_01.jpg" controls>
+            <source data-src="video/Drink.mp4" type="video/mp4" />
+            <source data-src="video/mcvideo.ogg" type="video/ogg" />
+        </video>
+                        <video preload="none" content="Forsikring, Billig, Studerende, Yndlings" data-image="img/video_img_02.jpg" controls>
+            <source data-src="video/Drink.mp4" type="video/mp4" />
+            <source data-src="video/mcvideo.ogg" type="video/ogg" />
+        </video>
+                        <video preload="none" content="Forsikring, Billig, Studerende, Yndlings" data-image="img/video_img_03.jpg" controls>
+            <source data-src="video/Drink.mp4" type="video/mp4" />
+            <source data-src="video/mcvideo.ogg" type="video/ogg" />
+        </video>
+                    </div>
+                </div>
                 <div class="omtekst">
-                    <h1>Lidt om Vandret vandflaske</h1>
-                    <p>Genbrugelige flade flasker, som passer i din taske, står og ligger stabilt, samt hjælper med at reducere plastikspild! </p>
+                    <h1>Ideen bag flasken</h1>
+                    <p>Idéen om at udbrede den flade vandflaske, opstod i mødet med de problematikker vi oplevede med den klassiske drikkedunk - pladsmangel på skrivebordet, rod i tasken, den grimme engangsflaske og den dårlige samvittighed ved at smide plastik ud. Derfor blev VANDRET etableret i 2017, med en vision om at gøre det mere attraktivt at benytte en genbrugelig flaske med funktion i fokus og design for øjet.</p>
                 </div>
             </div>
         </section>
@@ -88,7 +107,35 @@
             </div>
         </section>
         <section id="koeb">
-            <div class="container"></div>
+            <div class="container">
+                <div id="flaske-left">
+                    <div id="pris_small">
+                        <h3>320 ml</h3>
+                        <a href="#" class="button">119 kr.</a>
+                    </div>
+                    <div id="koeb_button">
+                        <a href="#" class="button">SHOP HER</a></div>
+                    <div id="small">
+                        <div id="bottlewater">
+                            <div id="bottlewater_sprite" class="bottlewater_walkcycle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="flaske-right">
+                    <div id="pris_big">
+                        <h3>470 ml</h3>
+                        <a href="#" class="button">139 kr.</a>
+                    </div>
+                    <div id="big">
+                        <div id="flaskevand">
+                            <div id="flaskevand_sprite" class="flaskevand_walkcycle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="koeb_tx">Se på shop siden for at få flere detaljer angående køb.</p>
         </section>
         <section id="insta">
             <div class="container"></div>

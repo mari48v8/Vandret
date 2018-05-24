@@ -38,6 +38,7 @@ body {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     color: #12369D;
+    background: #F6F6F6;
 }
 
 img {
@@ -65,6 +66,7 @@ h6 {
 p {
     margin-top: 0;
     margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 a {
@@ -266,7 +268,11 @@ h6,
     }
 }
 
+/******************video*******************/
 
+video {
+    width: 100%;
+}
 
 /******************header-top*******************/
 
@@ -319,10 +325,8 @@ h6,
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
-.sticky + #SoMe {
+.sticky + #omflasken {
     padding-top: 60px;
-
-
 }
 
 
@@ -330,9 +334,11 @@ h6,
 /* Add a black background color to the top navigation */
 
 .topnav {
-    background-color: #fff;
+    background: #F6F6F6;
     overflow: hidden;
     color: black;
+
+
 }
 
 /* Style the links inside the navigation bar */
@@ -374,7 +380,6 @@ h6,
     background-color: #6a90ff;
     color: #12369D;
     z-index: -5;
-
 }
 
 #SoMe:after {
@@ -426,7 +431,6 @@ h6,
     height: 0;
     clear: both;
     visibility: hidden;
-
 }
 
 
@@ -475,20 +479,19 @@ h6,
     visibility: hidden;
 }
 
-#video_left {}
 
 .omtekst {
-    max-width: 300px;
-    grid-column: 2;
+    max-width: 500px;
 }
 
 #omflasken h1 {
-    margin: 30px auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
 
 }
 
 #omflasken p {
-    grid-column: 2;
+    line-height: 1.6;
 
 
 }
@@ -629,7 +632,6 @@ h6,
 
 #frost {
 
-    margin-top: 5%;
     margin-bottom: 8%;
 
 }
@@ -647,7 +649,8 @@ h6,
 /******************Køb*******************/
 
 #koeb {
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
 #koeb:after {
@@ -657,6 +660,139 @@ h6,
     clear: both;
     visibility: hidden;
 }
+
+#koeb_button {
+    position: relative;
+    top: 81%;
+    left: 92%;
+    width: 21%;
+    height: 70px;
+    padding: 2%;
+}
+
+#koeb_tx {
+    font-size: 1.20rem;
+    margin-top: 3%;
+    text-align: center;
+}
+
+#koeb h3 {
+    font-size: 1.25rem;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+#flaske-left {
+    /*    background-color: crimson;*/
+    padding-right: 4%;
+}
+
+#flaske-right {
+    /*    background-color: darkorchid;*/
+    padding-left: 4%;
+}
+
+#pris_small {
+    position: relative;
+    top: 50%;
+    left: 24%;
+    width: 16%;
+    height: 70px;
+    padding: 2%;
+    /*    background-color: aqua;*/
+}
+
+#pris_big {
+    position: relative;
+    top: 50%;
+    left: 57%;
+    width: 16%;
+    height: 70px;
+    padding: 2%;
+    /*    background-color: aqua;*/
+}
+
+#small {
+    height: auto;
+    float: right;
+    margin-top: -14.5%;
+}
+
+#big {
+    height: auto;
+    float: left;
+}
+
+/******************animerend flaskevand*******************/
+
+#bottlewater {
+    width: 351.99874px;
+    height: 678.954331px;
+    z-index: 2;
+
+}
+
+#bottlewater_sprite {
+    background-image: url(img/flaske_animation.png);
+    background-size: 300%;
+    width: 351.99874px;
+    height: 678.954331px;
+
+}
+
+.bottlewater_walkcycle {
+    animation-name: bottlewater_walkcycle_kf;
+    animation-duration: 3s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: infinite;
+    animation-direction: towards;
+
+}
+
+@keyframes bottlewater_walkcycle_kf {
+    0% {
+        display: none
+    }
+    100% {
+        background-position: -300%;
+    }
+}
+
+/******************animerend flaskevand*******************/
+
+#flaskevand {
+    width: 351.99874px;
+    height: 678.954331px;
+    z-index: 2;
+
+}
+
+#flaskevand_sprite {
+    background-image: url(img/flaske_animation_right.png);
+    background-size: 300%;
+    width: 351.99874px;
+    height: 678.954331px;
+
+}
+
+.flaskevand_walkcycle {
+    animation-name: flaskevand_walkcycle_kf;
+    animation-duration: 3s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+
+@keyframes flaskevand_walkcycle_kf {
+    0% {
+        display: none
+    }
+    100% {
+        background-position: -300%;
+    }
+}
+
 
 /******************Køb slut*******************/
 
