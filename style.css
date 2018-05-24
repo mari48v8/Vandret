@@ -138,36 +138,30 @@ h6,
 
 @media (max-width: 575px) {
     .container {
-/*        background-color: aqua;*/
-
+        /*        background-color: aqua;*/
     }
     .container_3fr {
-/*        background-color: aqua;*/
-
-
+        /*        background-color: aqua;*/
     }
 }
 
 @media (min-width: 576px) {
     .container {
-/*        background-color: blueviolet;*/
-
+        /*        background-color: blueviolet;*/
     }
     .container_3fr {
-/*        background-color: blueviolet;*/
-
-
+        /*        background-color: blueviolet;*/
     }
 }
 
 @media (min-width: 768px) {
     .container {
-/*        background-color: crimson;*/
+        /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .container_3fr {
-/*        background-color: crimson;*/
+        /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -176,19 +170,19 @@ h6,
 
 @media (min-width: 992px) {
     .container {
-/*        background-color: darkseagreen;*/
+        /*        background-color: darkseagreen;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .container_3fr {
-/*        background-color: darkseagreen;*/
+        /*        background-color: darkseagreen;*/
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     .topnav {
         margin: 0px auto;
         width: 1037px;
-/*        background-color: aqua;*/
+        /*        background-color: aqua;*/
     }
     .topnav a {
         margin-right: 140px;
@@ -198,25 +192,25 @@ h6,
     }
     .sticky {
         padding-left: 14%;
-/*        background-color: blueviolet;*/
+        /*        background-color: blueviolet;*/
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-/*        background-color: darkorange;*/
+        /*        background-color: darkorange;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .container_3fr {
-/*        background-color: darkorange;*/
+        /*        background-color: darkorange;*/
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     .topnav {
         margin: 0px auto;
         width: 1037px;
-/*        background-color: aqua;*/
+        /*        background-color: aqua;*/
     }
     .topnav a {
         margin-right: 140px;
@@ -226,7 +220,7 @@ h6,
     }
     .sticky {
         padding-left: 14%;
-/*        background-color: blueviolet;*/
+        /*        background-color: blueviolet;*/
     }
 }
 
@@ -325,8 +319,10 @@ h6,
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
-.sticky + #omflasken {
+.sticky + #SoMe {
     padding-top: 60px;
+
+
 }
 
 
@@ -337,8 +333,6 @@ h6,
     background-color: #fff;
     overflow: hidden;
     color: black;
-
-
 }
 
 /* Style the links inside the navigation bar */
@@ -380,6 +374,7 @@ h6,
     background-color: #6a90ff;
     color: #12369D;
     z-index: -5;
+
 }
 
 #SoMe:after {
@@ -431,6 +426,7 @@ h6,
     height: 0;
     clear: both;
     visibility: hidden;
+
 }
 
 
