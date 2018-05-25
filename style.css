@@ -323,10 +323,13 @@ video {
     z-index: 10;
 }
 
+
+
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
-.sticky + #omflasken {
+.sticky + #SoMe {
     padding-top: 60px;
+
 }
 
 
@@ -469,6 +472,7 @@ video {
     display: grid;
     width: 100%;
     z-index: 7;
+
 }
 
 #omflasken:after {
@@ -502,6 +506,15 @@ video {
 
 #design {
     display: grid;
+    padding-bottom: 100px;
+
+}
+
+#design_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2;
+
 }
 
 #design:after {
@@ -513,27 +526,28 @@ video {
 }
 
 #design h1 {
-
     max-width: 350px;
     margin: 30px auto;
     margin-top: 30px;
     margin-bottom: 10px;
+    padding-left: 36px;
 
 }
 
 #design p {
-
     max-width: 350px;
     margin: 30px auto;
+    padding-left: 36px;
 }
 
 /* Slideshow container */
 
 .slideshow-container {
     grid-column: 2;
-    max-width: 500px;
+    max-width: 300px;
     position: relative;
     margin: auto;
+
 }
 
 /* Hide the images by default */
@@ -578,6 +592,7 @@ video {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: #6A90FF;
+
 
 }
 
@@ -817,7 +832,7 @@ video {
 #review {
     display: grid;
     margin-top: 4%;
-    background-color: #1d58ff;
+    border: 2px solid;
 }
 
 #review:after {
