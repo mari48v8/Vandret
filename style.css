@@ -145,6 +145,8 @@ h6,
     .container_3fr {
         /*        background-color: aqua;*/
     }
+
+
 }
 
 @media (min-width: 576px) {
@@ -154,6 +156,7 @@ h6,
     .container_3fr {
         /*        background-color: blueviolet;*/
     }
+
 }
 
 @media (min-width: 768px) {
@@ -221,7 +224,7 @@ h6,
         margin-right: 0px;
     }
     .sticky {
-        padding-left: 14%;
+        padding-left: 13%;
         /*        background-color: blueviolet;*/
     }
 }
@@ -248,10 +251,6 @@ h6,
         display: block;
     }
 
-    #omos {
-        grid-template-columns: 1;
-        display: block;
-    }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -890,6 +889,19 @@ video {
 
 
 /******************om os slut*******************/
+
+/******************kontakt*******************/
+
+#kontakt {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 400px
+}
+
+
+
+
+/******************kontakt slut*******************/
 
 /*******************footer************************/
 
