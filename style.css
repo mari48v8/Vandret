@@ -247,6 +247,11 @@ h6,
         float: right;
         display: block;
     }
+
+    #omos {
+        grid-template-columns: 1;
+        display: block;
+    }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -556,6 +561,7 @@ video {
     display: none;
 }
 
+/* The dots/bullets/indicators */
 
 /* Fading animation */
 
@@ -857,6 +863,33 @@ video {
 }
 
 /******************Reveiew slut*******************/
+
+/******************om os*******************/
+
+#omos {
+    display: grid;
+    grid-template-columns: 2;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px;
+
+}
+
+#omos h1 {
+    text-align: center;
+}
+
+#omostekst {
+    grid-column: 1;
+}
+
+#omosimg {
+    grid-column: 2;
+    width: 300px;
+}
+
+
+/******************om os slut*******************/
 
 /*******************footer************************/
 
