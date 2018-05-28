@@ -1045,3 +1045,37 @@ input[type=submit] {
 input[type=submit]:hover {
     opacity: 0.8;
 }
+
+/******************************************************************  Produkt.html  *****************************************************************/
+
+#pro {
+    height: 500px;
+}
+
+.pro_img {
+    width: 25%;
+}
+
+.pro_big_img {
+    position: absolute;
+    width: 20%;
+    left: 17%;
+}
+
+.pro_small_img {
+    position: relative;
+    width: 39%;
+    left: 43%;
+    top: 16%;
+
+}
+
+/******************************************************************  fragt.html  *****************************************************************/
+
+#fragt_info {
+    padding-bottom: 8%;
+}
+
+#fragt_info h2 {
+    margin-top: 8%;
+}
