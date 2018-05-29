@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vandret</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/balloon.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="video/6/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="video/6/mcVideoPlugin.js" type="text/javascript"></script>
+    <script src="video/6/js-image-slider.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -15,7 +22,7 @@
             <a href="index.html" class="active">Forside</a>
             <a href="#omos">Om os</a>
             <a href="#produkt">Produkt</a>
-            <a href="#shop">Shop</a>
+            <a href="#shop">Køb</a>
             <a href="kontakt.html">Kontakt</a>
             <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
                 <i class="fa fa-bars"></i></a>
@@ -24,7 +31,22 @@
             <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" class="button">SHOP</a></p>
         </section>
     </header>
-    <section id="omos">
+
+
+    <section id="modtager"></section>
+    <template id="myTemplate">
+       <article>
+        <div id="omoscontainer">
+          <div id="omostekst"><h1 id="data-titel"></h1>
+          <p id="data-tekst"></p>
+           </div>
+           <div id="omosimg"><img id="data-billede" src="" ></div>
+           </div>
+       </article>
+
+    </template>
+
+    <!--
         <div id="omostekst">
             <h1>Om os</h1>
             <p>Idéen om at udbrede den flade vandflaske, opstod i mødet med de problematikker vi oplevede med den klassiske drikkedunk - pladsmangel på skrivebordet, rod i tasken, den grimme engangsflaske og den dårlige samvittighed ved at smide plastik ud.</p>
@@ -32,11 +54,10 @@
         </div>
         <div id="omosimg">
             <img src="img/flaske_03.png" alt="Flaske"></div>
+-->
 
-    </section>
 
-
-   <footer>
+    <footer>
         <div class="container_3fr" style="color:white;">
             <div id="kontaktinfo">
                 <h2>Kontakt info</h2>
@@ -84,7 +105,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="java.js"></script>
+    <script src="omos.js"></script>
 </body>
 
 </html>
