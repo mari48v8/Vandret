@@ -129,6 +129,15 @@ h6,
     margin: 0;
 }
 
+.container_inces {
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0;
+}
+
 .container_3fr {
     width: 92%;
     padding-right: 4%;
@@ -165,6 +174,11 @@ h6,
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    .container_inces {
+        /*        background-color: crimson;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .container_3fr {
         /*        background-color: crimson;*/
         display: grid;
@@ -176,6 +190,11 @@ h6,
 @media (min-width: 992px) {
     .container {
         /*        background-color: darkseagreen;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_inces {
+        /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -204,6 +223,11 @@ h6,
 @media (min-width: 1200px) {
     .container {
         /*        background-color: darkorange;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_inces {
+        /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1049,25 +1073,74 @@ input[type=submit]:hover {
 /******************************************************************  Produkt.html  *****************************************************************/
 
 #pro {
-    height: 500px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#pro:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#pro h1 {
+    margin-top: 6%;
+    padding-bottom: 4%;
+}
+
+.center {
+    text-align: center;
+    padding-top: 4%;
+}
+
+.h1_2 {
+    padding-top: 8%;
+    padding-bottom: 4%;
+
 }
 
 .pro_img {
     width: 25%;
 }
 
+.pro_r1_img {
+    width: 25%;
+
+}
+
+.pro_02_img {
+    width: 70%;
+    margin-left: 10%;
+}
+
+.pro_03_img {
+    width: 84%;
+    margin-top: 41%;
+    margin-left: 7%;
+
+}
+
 .pro_big_img {
-    position: absolute;
     width: 20%;
-    left: 17%;
+
 }
 
 .pro_small_img {
-    position: relative;
-    width: 39%;
-    left: 43%;
-    top: 16%;
+    width: 60%;
+    margin-left: 25%;
 
+
+}
+
+#pro ul {
+    padding: 20px;
+}
+
+#pro li {
+    margin: 5px;
+    font-weight: 700;
 }
 
 /******************************************************************  fragt.html  *****************************************************************/

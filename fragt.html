@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vandret</title>
+    <title>Fragt</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/style_02.css">
     <link rel="stylesheet" href="css/balloon.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,7 +21,7 @@
         <div class="topnav" id="navbar">
             <a href="#forside" class="active">Forside</a>
             <a href="omos.html">Om os</a>
-            <a href="#produkt">Produkt</a>
+            <a href="produkt.html">Produkt</a>
             <a href="#shop">Køb</a>
             <a href="kontakt.html">Kontakt</a>
             <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
@@ -34,54 +33,35 @@
     </header>
     <main>
         <section>
-            <div class="container" style="margin-top:5%;">
-                <div id="fragt_info">
-                    <h1>Betaling og Levering</h1>
-                    <h2>Betalingsmuligheder/sikker betaling:</h2>
 
-                    <p>Hos Vandret har du mulighed for at betale med: Dankort/Visadankort Mastercard Visa Elektron Visa, Meastro JBC American Express - Der er ingen gebyr i forbindelse med anvendelse af betalingskort. Vi tager desværre ikke imod bankoverførsel og sender ikke pr. efterkrav</p>
-
-
-
-                    <h2>Sikker betaling</h2>
-
-                    <p>De data, du oplyser i forbindelse med et online køb betalt med betalingskort, er krypterede (SSL. Det er altså kun Nets (tidligere PBS), der kan læse dem. Hverken netbutikken eller andre har mulighed for at læse dataene. Beløbet hæves først på din konto, når varerne sendes fra DFashion.dk. Der kan aldrig trækkes et større beløb end det, du har godkendt ved købet. Ved betaling med betalingskort hos DFashion skal der oplyses følgende: Kortnummer (16 cifre printet ind i kortet på forsiden) Udløbsdato (printet ind i kortet på forsiden) Kontrolcifre (tre cifre skrevet på kortets bagside lige over magnetstrimlen yderst til højre) www.Dfashion.dk modtager ingen oplysninger om dit kreditkortnummer og/eller udløbsdato, men får melding om, at et beløb er reserveret til dfashions.dk til senere overførsel, når vi har ekspederet din ordre. Når varerne er pakket og sendt med Post Danmark går der besked til PBS om at overføre de reserverede beløb til vores konto hos PBS.</p>
-
-
-
-                    <h2>Forsendelse:</h2>
-
-                    <p>Fragtomkostning indenfor Danmark opkræves med 65,00 kr. for pakker med omdeling og 50,00 kr for pakker uden omdeling. (priser er inkl moms ) Erhvervspakker opkræves med 65,00 kr ( inkl. ) Alle ordre indenfor Danmark sendes som forsikret pakke med Post Danmark og track & trace nr. Der leveres fragt frit Uden omdeling ved køb på over 500,00 kr. Vi sender ikke fragtfrit til Grønland og Færøerne og øvrige Europa. Hvis du modtager gratis fragt ved køb over 500 kr, og returnere dele af din ordre, fratrækkes det beløb vi har brugt på at sende din pakke refunderings beløbet.</p>
-
-
-
-                    <h2>Levering:</h2>
-
-                    <p>Vi sender om muligt samme dag hvis ordren er modtaget inden kl 14 hvis varen er på lager. Leveringstid vil typisk være 1 til 2 dage. Bestillingsvarer: Vi tager forbehold for varer der ikke er på lager, dette vil ofte være oplyst under den pågældende vare leveringstid på disse vil typisk være 8-10 hverdage, og ellers vil man modtage en mail herom snarest efter ordren er modtaget.</p>
-
-
-
-                    <h2>Uafhentet pakker</h2>
-                    <p>Hvis du ikke har hentet din pakke eller skrevet forkerte oplysninger, og vi derfor får pakken retur fra post danmark forbeholder vi os retten til at debitere dig for omkostningerne der er opstået i forbindelse med dette. Retur og håndteringsomkostningerne er på total 110 kr. </p>
-
-
-
-                    <h2>FRAGT TIL UDLANDET:</h2>
-
-                    <p>Kontakt os for pris ved levering til udlandet kontakt@dfashion.dk Vi gør opmærksom på at fragt ikke refunderes ved returnering af varer fra udlandet, Køber afholder selv alle fragt omkostninger.</p>
-
-
-
-                    <h2>TOLD OG MOMS</h2>
-                    <p>Bestiller du fra et EU-land betales der dansk moms, men ingen told efter reglerne om varernes frie bevægelighed. Bestiller du derimod fra et land udenfor EU, kan der blive påført lokale skatter og told som vi ikke kan drages til ansvar for. Vær opmærksom på, at varerne kan blive tilbageholdt i tolden, og dette kan forsinke din pakke væsentlig. Det er derfra dit ansvar at tage kontakt til fragtfirmaet og betale de påførte meromkostninger.</p>
+            <section id="modtager"></section>
+            <template id="myTemplate">
+           <article>
+            <div class="container_inces">
+                  <div id="fragt_info">
+                    <h1 class="centerText" style="margin-top:10%;" data-titel></h1>
+                    <h2 data-underrubrik></h2>
+                    <p data-tekst></p>
+                    <h2 data-underrubrik_02></h2>
+                    <p data-tekst_02></p>
+                    <h2 data-underrubrik_03></h2>
+                    <p data-tekst_03></p>
+                    <h2 data-underrubrik_04></h2>
+                    <p data-tekst_04></p>
+                    <h2 data-underrubrik_05></h2>
+                    <p data-tekst_05></p>
+                    <h2 data-underrubrik_06></h2>
+                    <p data-tekst_06></p>
+                    <h2 data-underrubrik_07></h2>
+                    <p data-tekst_07></p>
                 </div>
-                <div id=" pro ">
-                    <img class="pro_img " src="img/icons-05.png ">
-                    <img class="pro_img " src="img/icons-06.png ">
-                    <img class="pro_img " src="img/icons-07.png ">
-                    <img class="pro_img " src="img/icons-08.png ">
+                  <div id="pro">
+                    <img src="" data-billede>
                 </div>
-            </div>
+           </div>
+           </article>
+    </template>
+
         </section>
     </main>
     <footer>
@@ -133,22 +113,44 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="java.js"></script>
-    <!--
-<script>
-    var video = document.getElementById("myVideo");
-    var btn = document.getElementById("myBtn");
+    <script>
+        let restauranter;
+        let minTemplate = document.querySelector("#myTemplate");
+        //hent Json
+        async function hentJson() {
+            let jsonObjekt = await fetch("http://dyrmosedesign.dk/kea/Vandret/wordpress/wp-json/wp/v2/fragt");
+            restauranter = await jsonObjekt.json();
+            visRestauranter();
+            //       console.log(observationer);
 
-    function myFunction() {
-        if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-        } else {
-            video.pause();
-            btn.innerHTML = "Play";
         }
-    }
-</script>
--->
+
+        function visRestauranter() {
+            restauranter.forEach(restaurant => {
+                let klon = minTemplate.cloneNode(true).content;
+                klon.querySelector("[data-titel]").textContent = restaurant.acf.titel;
+                klon.querySelector("[data-underrubrik]").textContent = restaurant.acf.underrubrik;
+                klon.querySelector("[data-tekst]").innerHTML = restaurant.acf.tekst;
+                klon.querySelector("[data-underrubrik_02]").textContent = restaurant.acf.underrubrik_02;
+                klon.querySelector("[data-tekst_02]").innerHTML = restaurant.acf.tekst_02;
+                klon.querySelector("[data-underrubrik_03]").textContent = restaurant.acf.underrubrik_03;
+                klon.querySelector("[data-tekst_03]").innerHTML = restaurant.acf.tekst_03;
+                klon.querySelector("[data-underrubrik_04]").textContent = restaurant.acf.underrubrik_04;
+                klon.querySelector("[data-tekst_04]").innerHTML = restaurant.acf.tekst_04;
+                klon.querySelector("[data-underrubrik_05]").textContent = restaurant.acf.underrubrik_05;
+                klon.querySelector("[data-tekst_05]").innerHTML = restaurant.acf.tekst_05;
+                klon.querySelector("[data-underrubrik_06]").textContent = restaurant.acf.underrubrik_06;
+                klon.querySelector("[data-tekst_06]").innerHTML = restaurant.acf.tekst_06;
+                klon.querySelector("[data-underrubrik_07]").textContent = restaurant.acf.underrubrik_07;
+                klon.querySelector("[data-tekst_07]").innerHTML = restaurant.acf.tekst_07;
+                klon.querySelector("[data-billede]").src = restaurant.acf.billede.url;
+
+                document.querySelector("#modtager").appendChild(klon);
+                //                templateModtager.appendChild(klon)
+            })
+        }
+        document.addEventListener("DOMContentLoaded", hentJson);
+    </script>
 </body>
 
 </html>
