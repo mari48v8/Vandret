@@ -955,7 +955,8 @@ video {
 /******************Insta*******************/
 
 #insta {
-    height: 300px;
+    height: auto;
+    margin-top: 3%;
 }
 
 #insta:after {
@@ -973,7 +974,7 @@ video {
 #review {
     display: grid;
     margin-top: 4%;
-    border: 2px solid;
+
 }
 
 #review:after {
@@ -982,6 +983,13 @@ video {
     height: 0;
     clear: both;
     visibility: hidden;
+}
+
+.center_pro {
+    width: 100%;
+    padding-top: 6%;
+    margin-bottom: 0%;
+    text-align: center;
 }
 
 .center {
@@ -1207,7 +1215,6 @@ input[type=submit]:hover {
 
 .center {
     text-align: center;
-    padding-top: 4%;
     margin-bottom: 0;
 }
 
@@ -1294,22 +1301,26 @@ input[type=submit]:hover {
 }
 
 .shop_koeb {
-    /*    background-color: brown;*/
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+    background: #f0f4ff;
 }
+
 
 .shop_koeb h1 {
     text-align: center;
-    background-color: #b7c9ff;
+    background-color: #F0A8CF;
     padding-top: 4%;
     padding-bottom: 4%;
+    margin: 0;
 }
 
 .shop_koeb h2 {
     text-align: center;
-    background-color: #6A90FF;
+    background-color: #D984A8;
     padding-top: 4%;
     padding-bottom: 4%;
-    margin-top: 8%;
     margin-bottom: 0;
 }
 
