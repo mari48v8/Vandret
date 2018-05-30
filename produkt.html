@@ -20,10 +20,10 @@
     <header>
         <section id="header-top"><a href="https://www.linkedin.com/company/vandret/" target="_blank"><img src="img/vandret-07.png" class="icons"></a><a href="https://www.facebook.com/vandretflasker" target="_blank"><img src="img/vandret-06.png" class="icons"></a><a href="https://www.instagram.com/vandretflasker/" target="_blank"><img src="img/vandret-05.png" class="icons"></a><a href=""><img src="img/vandret-08.png" class="cart"></a><img src="img/vandret_logo.png" class="logo"></section>
         <div class="topnav" id="navbar">
-            <a href="#forside" class="active">Forside</a>
+            <a href="index.html">Forside</a>
             <a href="omos.html">Om os</a>
-            <a href="produkt.html">Produkt</a>
-            <a href="#shop">Køb</a>
+            <a href="produkt.html" class="active">Produkt</a>
+            <a href="koeb.html">Køb</a>
             <a href="kontakt.html">Kontakt</a>
             <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
                 <i class="fa fa-bars"></i></a>
@@ -32,30 +32,31 @@
             <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" class="button">SHOP</a></p>
         </section>
     </header>
-    <main>
+    <main style="background: white;">
         <section id="modtager"></section>
 
         <template id="myTemplate">
 
        <article>
-<!--             <h1 class="centerText" data-titel></h1>-->
-           <div class="container_inces">
-            <div id="pro">
+           <img style="width:50%; margin: 0px auto; padding-left: 25%; margin-top: 3.5%;" src="img/vandret-09.png">
+           <div class="container_med_padding">
+           <div id="pro">
                <img  class="pro_small_img" src="" data-billede>
-                  <h1 class="centerText" data-titel_01></h1>
+                  <h1 style="margin-top:15%;"class="centerText" data-titel_01></h1>
                 <p data-tekst></p></div>
             <div id="pro">
                   <h1 class="centerText" data-titel_02></h1>
                 <p data-tekst_02></p>
                 <img  class="pro_03_img" src="" data-billede_02></div>
-            <div id="pro">
+            <div style="margin-bottom:16%;" id="pro">
              <img  class="pro_02_img" src="" data-billede_03> </div>
                <div id="pro">
                <h1 class="centerText" data-titel_03></h1>
                <p data-tekst_03></p></div>
        </div>
-                <h1 class="center" data-titel_09>Værd at vide om flasken</h1>
-           <div class="container_inces">
+
+                <h1 style="background-color:#b7c9ff;" class="center" data-titel_09>Værd at vide om flasken</h1>
+           <div style="background-color:#b7c9ff;"class="container_med_padding">
                      <div id="pro">
                     <ul>
                 <li data-titel_04></li>
@@ -73,6 +74,31 @@
                 <li data-titel_08></li>
                     <p data-tekst_08></p>
                          </ul></div>
+           </div>
+
+                <div class="container_1fr">
+            <form id="contact" action="" method="post">
+                <h1>Har du nogle spørgsmål?</h1>
+                <h4>Du er velkommen til at kontakte os i dag. Vi svarer inden for 24 timer!</h4>
+                <fieldset>
+                    <input placeholder="DIT NAVN" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="DIN E-MAIL" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="TELEFON" type="tel" tabindex="3" required>
+                </fieldset>
+                     <fieldset>
+                    <input placeholder="EMNE" type="emne" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="BESKED" tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <p id="submission"><button name="submit" type="submit" class="button" data-submit="...Sending">SEND</button></p>
+                </fieldset>
+            </form>
            </div>
 
            </article>
@@ -126,7 +152,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="java.js"></script>
+    <script src="js/java.js"></script>
 
     <script>
         let produkterne;

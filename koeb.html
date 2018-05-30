@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragt</title>
+    <title>Vandret</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/balloon.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900" rel="stylesheet">
@@ -19,10 +19,10 @@
     <header>
         <section id="header-top"><a href="https://www.linkedin.com/company/vandret/" target="_blank"><img src="img/vandret-07.png" class="icons"></a><a href="https://www.facebook.com/vandretflasker" target="_blank"><img src="img/vandret-06.png" class="icons"></a><a href="https://www.instagram.com/vandretflasker/" target="_blank"><img src="img/vandret-05.png" class="icons"></a><a href=""><img src="img/vandret-08.png" class="cart"></a><img src="img/vandret_logo.png" class="logo"></section>
         <div class="topnav" id="navbar">
-            <a href="#forside" class="active">Forside</a>
+            <a href="index.html">Forside</a>
             <a href="omos.html">Om os</a>
             <a href="produkt.html">Produkt</a>
-            <a href="koeb.html">Køb</a>
+            <a href="koeb.html" class="active">Køb</a>
             <a href="kontakt.html">Kontakt</a>
             <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
                 <i class="fa fa-bars"></i></a>
@@ -31,38 +31,60 @@
             <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" class="button">SHOP</a></p>
         </section>
     </header>
-    <main>
-        <section>
+    <main style="background: white;">
 
-            <section id="modtager"></section>
-            <template id="myTemplate">
-           <article>
-            <div class="container_med_padding">
-                  <div id="fragt_info">
-                    <h1 class="centerText" style="margin-top:10%;" data-titel></h1>
-                    <h2 data-underrubrik></h2>
-                    <p data-tekst></p>
-                    <h2 data-underrubrik_02></h2>
-                    <p data-tekst_02></p>
-                    <h2 data-underrubrik_03></h2>
-                    <p data-tekst_03></p>
-                    <h2 data-underrubrik_04></h2>
-                    <p data-tekst_04></p>
-                    <h2 data-underrubrik_05></h2>
-                    <p data-tekst_05></p>
-                    <h2 data-underrubrik_06></h2>
-                    <p data-tekst_06></p>
-                    <h2 data-underrubrik_07></h2>
-                    <p data-tekst_07></p>
+        <section id="modtager"></section>
+        <template id="myTemplate">
+       <article>
+        <h1 id="shop_h1" data-titel></h1>
+        <p id="shop_p" data-tekst></p>
+        <div class="container_med_padding">
+            <div>
+                <div class="container">
+                    <div id="shop_left">
+                        <img class="shop_img" src="" data-billede>
+                    </div>
+                    <div id="shop_right">
+                        <h4 data-underrubrik></h4>
+                        <hr>
+                        <p data-tekst_02></p>
+                    </div>
                 </div>
-                  <div id="pro">
-                    <img src="" data-billede>
+                <div class="container_1fr">
+                    <div class="shop_koeb">
+                        <h2 style="background-color: #1746cc; color: white;" data-underrubrik_02></h2>
+                        <h1 style="background: #9db6ff;" data-titel_02></h1>
+                        <p data-tekst_03></p>
+                        <p id="submission"><input class="button" type="Køb" value="Køb nu" /></p>
+                    </div>
                 </div>
-           </div>
-           </article>
-    </template>
+            </div>
+            <div>
+                <div class="container">
+                    <div id="shop_left">
+                        <img class="shop_img" src="" data-billede_02>
+                    </div>
+                    <div id="shop_right">
+                        <h4 data-underrubrik_03></h4>
+                        <hr>
+                        <p data-tekst_04></p>
+                    </div>
+                </div>
+                <div class="container_1fr">
+                    <div class="shop_koeb">
+                        <h2 data-underrubrik_04></h2>
+                        <h1 data-titel_03></h1>
+                        <p data-tekst_05></p>
+                        <p id="submission"><input class="button" type="Køb" value="Køb nu" /></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="shop_p" data-tekst_06></p>
+        <p id="submission"><input style="margin-bottom:6%;" class="button" type="button" onclick="location.href='fragt.html';" value="Betingelserne" /></p>
+            </article>
+        </template>
 
-        </section>
     </main>
     <footer>
         <div class="container_3fr" style="color:white;">
@@ -113,37 +135,38 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/java.js"></script>
+
     <script>
-        let restauranter;
+        let produkterne;
         let minTemplate = document.querySelector("#myTemplate");
         //hent Json
         async function hentJson() {
-            let jsonObjekt = await fetch("http://dyrmosedesign.dk/kea/Vandret/wordpress/wp-json/wp/v2/fragt");
-            restauranter = await jsonObjekt.json();
-            visRestauranter();
-            //       console.log(observationer);
+            let jsonObjekt = await fetch("http://dyrmosedesign.dk/kea/Vandret/wordpress/wp-json/wp/v2/koeb");
+            produkterne = await jsonObjekt.json();
+            visProdukter();
+
 
         }
 
-        function visRestauranter() {
-            restauranter.forEach(restaurant => {
+        function visProdukter() {
+            produkterne.forEach(produkt => {
                 let klon = minTemplate.cloneNode(true).content;
-                klon.querySelector("[data-titel]").textContent = restaurant.acf.titel;
-                klon.querySelector("[data-underrubrik]").textContent = restaurant.acf.underrubrik;
-                klon.querySelector("[data-tekst]").innerHTML = restaurant.acf.tekst;
-                klon.querySelector("[data-underrubrik_02]").textContent = restaurant.acf.underrubrik_02;
-                klon.querySelector("[data-tekst_02]").innerHTML = restaurant.acf.tekst_02;
-                klon.querySelector("[data-underrubrik_03]").textContent = restaurant.acf.underrubrik_03;
-                klon.querySelector("[data-tekst_03]").innerHTML = restaurant.acf.tekst_03;
-                klon.querySelector("[data-underrubrik_04]").textContent = restaurant.acf.underrubrik_04;
-                klon.querySelector("[data-tekst_04]").innerHTML = restaurant.acf.tekst_04;
-                klon.querySelector("[data-underrubrik_05]").textContent = restaurant.acf.underrubrik_05;
-                klon.querySelector("[data-tekst_05]").innerHTML = restaurant.acf.tekst_05;
-                klon.querySelector("[data-underrubrik_06]").textContent = restaurant.acf.underrubrik_06;
-                klon.querySelector("[data-tekst_06]").innerHTML = restaurant.acf.tekst_06;
-                klon.querySelector("[data-underrubrik_07]").textContent = restaurant.acf.underrubrik_07;
-                klon.querySelector("[data-tekst_07]").innerHTML = restaurant.acf.tekst_07;
-                klon.querySelector("[data-billede]").src = restaurant.acf.billede.url;
+                klon.querySelector("[data-titel]").textContent = produkt.acf.titel;
+                klon.querySelector("[data-tekst]").innerHTML = produkt.acf.tekst;
+                klon.querySelector("[data-billede]").src = produkt.acf.billede.url;
+                klon.querySelector("[data-underrubrik]").textContent = produkt.acf.underrubrik;
+                klon.querySelector("[data-tekst_02]").innerHTML = produkt.acf.tekst_02;
+                klon.querySelector("[data-underrubrik_02]").textContent = produkt.acf.underrubrik_02;
+                klon.querySelector("[data-titel_02]").textContent = produkt.acf.titel_02;
+                klon.querySelector("[data-tekst_03]").innerHTML = produkt.acf.tekst_03;
+                klon.querySelector("[data-billede_02]").src = produkt.acf.billede_02.url;
+                klon.querySelector("[data-underrubrik_03]").textContent = produkt.acf.underrubrik_03;
+                klon.querySelector("[data-tekst_04]").innerHTML = produkt.acf.tekst_04;
+                klon.querySelector("[data-underrubrik_04]").textContent = produkt.acf.underrubrik_04;
+                klon.querySelector("[data-titel_03]").textContent = produkt.acf.titel_03;
+                klon.querySelector("[data-tekst_05]").innerHTML = produkt.acf.tekst_05;
+                klon.querySelector("[data-tekst_06]").innerHTML = produkt.acf.tekst_06;
+
 
                 document.querySelector("#modtager").appendChild(klon);
                 //                templateModtager.appendChild(klon)

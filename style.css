@@ -38,7 +38,8 @@ body {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     color: #12369D;
-    background: #F6F6F6;
+    /*    background: #F6F6F6;*/
+    background: white;
 }
 
 img {
@@ -49,8 +50,8 @@ img {
 /******************Fonts*******************/
 
 hr {
-    height: 0;
-    overflow: visible;
+    border: #12369D 1px solid;
+
 }
 
 h1,
@@ -121,18 +122,32 @@ h6,
 /****************** Media Queries *******************/
 
 .container {
-    width: 92%;
-    padding-right: 4%;
-    padding-left: 4%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     margin: 0;
 }
 
-.container_inces {
+.container_med_padding {
     width: 80%;
     padding-right: 10%;
     padding-left: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0;
+}
+
+.container_1fr {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0;
+}
+
+.container_2fr {
+    width: 92%;
+    padding-right: 4%;
+    padding-left: 4%;
     margin-right: auto;
     margin-left: auto;
     margin: 0;
@@ -148,7 +163,8 @@ h6,
 }
 
 @media (max-width: 575px) {
-    .container {
+    .container_1fr {}
+    .container_2fr {
         /*        background-color: aqua;*/
     }
     .container_3fr {
@@ -159,7 +175,8 @@ h6,
 }
 
 @media (min-width: 576px) {
-    .container {
+    .container_1fr {}
+    .container_2fr {
         /*        background-color: blueviolet;*/
     }
     .container_3fr {
@@ -169,12 +186,23 @@ h6,
 }
 
 @media (min-width: 768px) {
+
     .container {
         /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .container_inces {
+    .container_1fr {
+        /*        background-color: crimson;*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container_2fr {
+        /*        background-color: crimson;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_med_padding {
         /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -193,10 +221,26 @@ h6,
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .container_inces {
+    .container_1fr {
+        /*        background-color: darkseagreen;*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container_2fr {
+        /*        background-color: darkseagreen;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_med_padding {
         /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    #omoscontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
     }
     .container_3fr {
         /*        background-color: darkseagreen;*/
@@ -226,10 +270,27 @@ h6,
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .container_inces {
+    .container_1fr {
+        /*        background-color: darkorange;*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container_2fr {
+        /*        background-color: darkorange;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_med_padding {
         /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #omoscontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
     }
     .container_3fr {
         /*        background-color: darkorange;*/
@@ -365,7 +426,7 @@ video {
 /* Add a black background color to the top navigation */
 
 .topnav {
-    background: #F6F6F6;
+    background: white;
     overflow: hidden;
     color: black;
 
@@ -377,10 +438,10 @@ video {
 .topnav a {
     display: inline-block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 14px 5px 14px;
     text-decoration: none;
     font-size: 17px;
-    margin-bottom: 9px;
+    margin-bottom: 25px;
     color: black;
 
 }
@@ -393,9 +454,10 @@ video {
 
 /* Add an active class to highlight the current page */
 
-.active a {
-    color: #78CCDE;
+.topnav .active {
+    border-bottom: 2px #12369D solid;
 }
+
 
 /* Hide the link that should open and close the topnav on small screens */
 
@@ -443,11 +505,13 @@ video {
     margin-left: 10px;
 }
 
+/*
 .top {
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
 }
+*/
 
 /******************Video_bg*******************/
 
@@ -937,16 +1001,14 @@ video {
 
 /******************om os*******************/
 
-#omos {
-    display: grid;
-    grid-template-columns: 2;
+#omoscontainer {
     margin: 0 auto;
     max-width: 600px;
     padding: 40px;
 
 }
 
-#omos h1 {
+#omostekst h1 {
     text-align: center;
 }
 
@@ -964,10 +1026,62 @@ video {
 
 /******************kontakt*******************/
 
-#kontakt {
+.kontakter {
     margin: 0 auto;
-    padding: 40px;
-    max-width: 400px
+    max-width: 600px;
+    text-align: center;
+
+}
+
+.kontaktform {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-bottom: 30px;
+}
+
+
+.kontaktform form {
+    padding-top: 30px;
+
+}
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 6px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 30px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 
 
@@ -1074,7 +1188,7 @@ input[type=submit]:hover {
 
 #pro {
     margin-top: 4%;
-    margin-bottom: 4%;
+    padding: 2%;
 }
 
 #pro:after {
@@ -1086,13 +1200,15 @@ input[type=submit]:hover {
 }
 
 #pro h1 {
-    margin-top: 6%;
+    margin-top: 4%;
     padding-bottom: 4%;
+    font-size: 2.2rem;
 }
 
 .center {
     text-align: center;
     padding-top: 4%;
+    margin-bottom: 0;
 }
 
 .h1_2 {
@@ -1117,8 +1233,8 @@ input[type=submit]:hover {
 
 .pro_03_img {
     width: 84%;
-    margin-top: 41%;
-    margin-left: 7%;
+    margin-top: 13%;
+    margin-left: 10%;
 
 }
 
@@ -1136,10 +1252,11 @@ input[type=submit]:hover {
 
 #pro ul {
     padding: 20px;
+    list-style: none;
 }
 
 #pro li {
-    margin: 5px;
+    margin-bottom: 5px;
     font-weight: 700;
 }
 
@@ -1151,4 +1268,188 @@ input[type=submit]:hover {
 
 #fragt_info h2 {
     margin-top: 8%;
+}
+
+/******************************************************************  koeb.html  *****************************************************************/
+
+#shop_h1 {
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+#shop_p {
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#shop_left {
+    /*    background-color: chocolate;*/
+}
+
+#shop_right {
+    padding-left: 6%;
+    padding-right: 12%;
+    /*    background-color: brown;*/
+}
+
+.shop_koeb {
+    /*    background-color: brown;*/
+}
+
+.shop_koeb h1 {
+    text-align: center;
+    background-color: #b7c9ff;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.shop_koeb h2 {
+    text-align: center;
+    background-color: #6A90FF;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-top: 8%;
+    margin-bottom: 0;
+}
+
+.shop_koeb p {
+    padding: 6%;
+    /*    background-color: brown;*/
+}
+
+.shop_koeb .button {
+    width: 75px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+#submission {
+    text-align: center;
+}
+
+
+/*--------- Spørgsmål form ---------*/
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="emne"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {}
+
+#contact {
+    background: white;
+    width: 50%;
+    margin: 0px auto;
+    padding: 5%;
+}
+
+#contact h1 {
+    color: #12369D;
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+
+}
+
+#contact input[type="text"],
+#contact input[type="url"],
+#contact textarea {
+    width: 95%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="email"],
+#contact input[type="emne"],
+#contact input[type="tel"] {
+    width: 92%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="emne"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 16%;
+    border: none;
+    background: #12369D;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #09C;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
 }

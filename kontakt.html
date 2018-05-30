@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vandret</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style_02.css">
+    <link rel="stylesheet" href="css/balloon.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="video/6/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="video/6/mcVideoPlugin.js" type="text/javascript"></script>
+    <script src="video/6/js-image-slider.js" type="text/javascript"></script>
+
 </head>
 
 <body>
     <header>
         <section id="header-top"><a href="https://www.linkedin.com/company/vandret/" target="_blank"><img src="img/vandret-07.png" class="icons"></a><a href="https://www.facebook.com/vandretflasker" target="_blank"><img src="img/vandret-06.png" class="icons"></a><a href="https://www.instagram.com/vandretflasker/" target="_blank"><img src="img/vandret-05.png" class="icons"></a><a href=""><img src="img/vandret-08.png" class="cart"></a><img src="img/vandret_logo.png" class="logo"></section>
         <div class="topnav" id="navbar">
-            <a href="index.html" class="active">Forside</a>
+            <a href="index.html">Forside</a>
             <a href="omos.html">Om os</a>
             <a href="produkt.html">Produkt</a>
-            <a href="#shop">Køb</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a href="koeb.html">Køb</a>
+            <a href="kontakt.html" class="active">Kontakt</a>
             <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
                 <i class="fa fa-bars"></i></a>
         </div>
@@ -24,17 +32,42 @@
             <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" class="button">SHOP</a></p>
         </section>
     </header>
-    <section id="kontakt">
-        <div id="kontakttekst">
-            <h1>Kontakt</h1>
-            <p><span style="font-weight:bold">Tlf:</span> +45 60249906 ​<br> <span style="font-weight:bold">Mail:</span> info@vandretflasker.dk ​<br> <span style="font-weight:bold">Facebook:</span> www.facebook.com/vandretflasker ​<br> <span style="font-weight:bold">Instagram:</span> @vandretflasker ​<br> <span style="font-weight:bold">Linkedin:</span> www.linkedin.com/company/vandret</p>
-            <a href="https://www.linkedin.com/company/vandret/"><img src="img/vandret-07.png" class="icons"></a><a hreft="https://www.facebook.com/vandretflasker"><img src="img/vandret-06.png" class="icons"></a><a href="https://www.instagram.com/vandretflasker/"><img src="img/vandret-05.png" class="icons"></a>
+    <main>
+
+        <section id="modtager"></section>
+        <template id="myTemplate">
+       <article>
+                   <div class="kontakter" style="margin-top:5%;">
+                   <h1>Kontakt</h1>
+
+            <div class="kontakttekst"><span>Telefon:</span><p id="data-telefon"></p></div>
+           <div class="kontakttekst"><span>Mail:</span><p id="data-mail"></p></div>
+           <div class="kontakttekst"><span>Facebook:</span><p id="data-facebook"></p></div>
+           <div class="kontakttekst"><span>Instagram:</span><p id="data-instagram"></p></div>
+                       <div class="kontakttekst"><span>LinkedIn:</span><p id="data-linkedin"></p></div></div>
+
+       </article>
+    </template>
+
+
+        <div class="kontaktform" style="margin-top:5%;">
+            <form action="action_page.php">
+
+                <label for="fname">Fornavn</label>
+                <input type="text" id="fname" name="firstname" placeholder="Fornavn..">
+
+                <label for="lname">Efternavn</label>
+                <input type="text" id="lname" name="lastname" placeholder="Efternavn..">
+
+
+                <label for="subject">Besked</label>
+                <textarea id="subject" name="subject" placeholder="Skriv besked.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
         </div>
-
-
-    </section>
-
-
+    </main>
     <footer>
         <div class="container_3fr" style="color:white;">
             <div id="kontaktinfo">
@@ -51,10 +84,10 @@
                 <h2>Siderne</h2>
                 <ul>
                     <li><a href>Forside</a></li>
-                    <li><a href="omos.html">Om os</a></li>
+                    <li><a href>Om os</a></li>
                     <li><a href>Produkt</a></li>
                     <li><a href>Køb</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href>Kontakt</a></li>
                 </ul>
             </div>
             <div id="nyhedsbrev">
@@ -83,7 +116,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="java.js"></script>
+    <script src="js/kontakt.js"></script>
 </body>
 
 </html>
