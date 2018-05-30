@@ -1141,6 +1141,14 @@ footer a:hover {
     font-size: 0.8rem;
 }
 
+.footertekst {
+    text-align: left;
+}
+
+.footercontainer {
+    padding-top: 20px;
+}
+
 /*******************Nyhedsbrev************************/
 
 #nyhedsbrev {

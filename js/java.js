@@ -28,20 +28,32 @@ function menuFunction() {
     }
 }
 
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 2500); // Change image every 2 seconds
+let restauranter;
+let minTemplate = document.querySelector("#myTemplate");
+//hent Json
+async function hentJson() {
+
+    let jsonObjekt = await fetch("http://dyrmosedesign.dk/kea/Vandret/wordpress/wp-json/wp/v2/forside");
+    restauranter = await jsonObjekt.json();
+    visRestauranter();
+
+
 }
 
+function visRestauranter() {
+    restauranter.forEach(element => {
+        let klon = minTemplate.cloneNode(true).content;
+
+        klon.querySelector("[data-overskrift]").textContent = element.acf.overskrift;
+        klon.querySelector("#data-telefon_01").textContent = element.acf.telefon_01;
+        klon.querySelector("#data-mail_01").textContent = element.acf.mail_01;
+        klon.querySelector("#data-facebook_01").textContent = element.acf.facebook_01;
+        klon.querySelector("#data-instagram_01").textContent = element.acf.instagram_01;
+        klon.querySelector("#data-linkedin_01").textContent = element.acf.linkedin_01;
+
+        document.querySelector("#modtager").appendChild(klon);
+        templateModtager.appendChild(klon)
+    })
+}
+document.addEventListener("DOMContentLoaded", hentJson);

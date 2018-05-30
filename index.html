@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vandret</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/style_02.css">
     <link rel="stylesheet" href="css/balloon.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +28,7 @@
                 <i class="fa fa-bars"></i></a>
         </div>
         <section id="SoMe" class="top">
-            <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" class="button">SHOP</a></p>
+            <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="koeb.html" class="button">KØB</a></p>
         </section>
     </header>
     <main>
@@ -146,17 +145,26 @@
         </section>
     </main>
     <footer>
+
         <div class="container_3fr" style="color:white;">
-            <div id="kontaktinfo">
-                <h2>Kontakt info</h2>
-                <ul>
-                    <li><a href="">Tlf: +45 60249906</a></li>
-                    <li><a href="">Mail: info@vandretflasker.dk </a></li>
-                    <li><a href="">Facebook: www.facebook.com/vandretflasker </a></li>
-                    <li><a href="">Instagram: @vandretflasker</a></li>
-                    <li><a href="">Linkedin: www.linkedin.com/company/vandret</a></li>
-                </ul>
-            </div>
+            <section id="modtager"></section>
+            <template id="myTemplate">
+       <article>
+
+  <div class="kontakter" style="margin-top:5%;">
+                   <div class="footercontainer">
+                   <div class="footertekst"><h1 data-overskrift></h1></div>
+
+            <div class="footertekst"><span>Telefon:</span><p id="data-telefon_01"></p></div>
+      <div class="footertekst"><span>Mail:</span><p id="data-mail_01" src=""></p></div>
+      <div class="footertekst"><span>Facebook:</span><p id="data-facebook_01"></p></div>
+      <div class="footertekst"><span>Insatagram:</span><p id="data-instagram_01"></p></div>
+      <div class="footertekst"><span>LinkedIn:</span><p id="data-linkedin_01"></p></div></div></div>
+
+
+       </article>
+    </template>
+
             <div id="siderne">
                 <h2>Siderne</h2>
                 <ul>
@@ -191,9 +199,11 @@
         <div id="bottom-footer">
             <p>@VANDRET VANDFLASKER SIDEN 2017</p>
         </div>
+
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/java.js"></script>
+
     <!--
 <script>
     var video = document.getElementById("myVideo");
