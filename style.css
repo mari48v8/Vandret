@@ -221,6 +221,7 @@ h6,
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+<<<<<<< HEAD
     .container_1fr {
         /*        background-color: darkseagreen;*/
         display: grid;
@@ -236,11 +237,16 @@ h6,
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+=======
+>>>>>>> origin/master
     #omoscontainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     }
     .container_3fr {
         /*        background-color: darkseagreen;*/
@@ -270,6 +276,7 @@ h6,
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+<<<<<<< HEAD
     .container_1fr {
         /*        background-color: darkorange;*/
         display: grid;
@@ -287,6 +294,8 @@ h6,
         grid-template-columns: repeat(2, 1fr);
     }
 
+=======
+>>>>>>> origin/master
     #omoscontainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1040,7 +1049,11 @@ video {
 }
 
 
+<<<<<<< HEAD
 .kontaktform form {
+=======
+form {
+>>>>>>> origin/master
     padding-top: 30px;
 
 }
