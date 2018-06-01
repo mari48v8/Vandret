@@ -541,8 +541,8 @@ video {
     color: #12369D;
     position: relative;
     padding: 20px;
-    width: 400px;
-    top: -400px;
+    width: 440px;
+    top: -296px;
     /* float: right; */
     left: 800px;
 }
@@ -746,12 +746,14 @@ video {
 }
 
 #info p {
-    color: #4978FF;
+    color: white;
 
 }
 
 #info {
     width: 100%;
+    padding-top: 3%;
+    padding-bottom: 1%;
     display: block;
 }
 
@@ -779,7 +781,6 @@ video {
 }
 
 #bpa {
-
     margin-right: 8%;
     margin-bottom: 8%;
 
@@ -955,7 +956,7 @@ video {
 /******************Insta*******************/
 
 #insta {
-    height: 300px;
+    height: auto;
 }
 
 #insta:after {
@@ -972,8 +973,8 @@ video {
 
 #review {
     display: grid;
-    margin-top: 4%;
-    border: 2px solid;
+    padding-bottom: 4%;
+    padding-top: 4%;
 }
 
 #review:after {
@@ -986,6 +987,13 @@ video {
 
 .center {
     width: 100%;
+    text-align: center;
+}
+
+.midt {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 2%;
     text-align: center;
 }
 
