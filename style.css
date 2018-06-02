@@ -189,8 +189,7 @@ h6,
 
     .container {
         /*        background-color: crimson;*/
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: none;
     }
     .container_1fr {
         /*        background-color: crimson;*/
@@ -218,8 +217,7 @@ h6,
 @media (min-width: 992px) {
     .container {
         /*        background-color: darkseagreen;*/
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: none;
     }
     .container_1fr {
         /*        background-color: darkseagreen;*/
@@ -236,12 +234,7 @@ h6,
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    #omoscontainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
 
-
-    }
     .container_3fr {
         /*        background-color: darkseagreen;*/
         display: grid;
@@ -287,11 +280,6 @@ h6,
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #omoscontainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-    }
     .container_3fr {
         /*        background-color: darkorange;*/
         display: grid;
@@ -494,7 +482,7 @@ video {
 }
 
 .button {
-    background-color: #12369D;
+    background-color: #ffc84d;
     border: none;
     color: white;
     padding: 10px 15px;
@@ -502,7 +490,6 @@ video {
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 10px;
 }
 
 /*
@@ -549,10 +536,12 @@ video {
 
 #myBtn {
     width: 70px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
+    margin-left: 1%;
     border: none;
-    background: #12369D;
+    background: #ffb000;
+    /*    background: #12369D;*/
     color: #fff;
     cursor: pointer;
 }
@@ -564,6 +553,7 @@ video {
     display: grid;
     width: 100%;
     z-index: 7;
+    margin-top: 6%;
 
 }
 
@@ -648,10 +638,10 @@ video {
     border: none;
     background-color: Transparent;
     background-repeat: no-repeat;
-    z-index: 3;
-    width: 20%;
-    left: -8%;
-    top: 15%;
+    z-index: 2;
+    width: 15%;
+    left: 5%;
+    top: -8%;
 }
 
 .Frostfri-infografik {
@@ -659,10 +649,10 @@ video {
     border: none;
     background-color: Transparent;
     background-repeat: no-repeat;
-    z-index: 2;
-    width: 30%;
-    top: -43%;
-    left: -21%;
+    z-index: 3;
+    width: 20%;
+    top: 65%;
+    left: -10%;
 
 
 }
@@ -673,18 +663,20 @@ video {
     background-color: Transparent;
     background-repeat: no-repeat;
     z-index: 2;
-    width: 20%;
-    top: 11%;
-    left: -9%;
+    width: 15%;
+    height: auto;
+    top: 12%;
+    left: -6%;
 
 
 }
 
 .pulse-button {
     border: none;
-    padding: 4%;
+    padding: 5%;
     box-shadow: 0 0 0 0 rgba(106, 144, 255, 0.3);
     border-radius: 50%;
+    background: #6A90FF;
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -747,12 +739,12 @@ video {
 
 #info p {
     color: white;
-
+    text-align: center;
 }
 
 #info {
     width: 100%;
-    padding-top: 3%;
+    padding-top: 4%;
     padding-bottom: 1%;
     display: block;
 }
@@ -975,6 +967,8 @@ video {
     display: grid;
     padding-bottom: 4%;
     padding-top: 4%;
+    color: #ffffff;
+    background: #ffb000;
 }
 
 #review:after {
@@ -1009,24 +1003,20 @@ video {
 
 /******************om os*******************/
 
-#omoscontainer {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 40px;
-
+#omos-wrapper {
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-#omostekst h1 {
+#omos-wrapper h1 {
     text-align: center;
-}
-
-#omostekst {
-    grid-column: 1;
+    margin-top: 10%;
+    padding-bottom: 2%;
 }
 
 #omosimg {
-    grid-column: 2;
-    width: 300px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 
@@ -1043,55 +1033,167 @@ video {
 
 .kontaktform {
     margin: 0 auto;
-    max-width: 600px;
-    padding-bottom: 30px;
-}
-
-
-.kontaktform form {
-    padding-top: 30px;
-
-}
-
-/* Style inputs with type="text", select elements and textareas */
-
-input[type=text],
-select,
-textarea {
     width: 100%;
-    /* Full width */
-    padding: 6px;
-    /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
-    box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
-    margin-top: 30px;
-    /* Add a top margin */
-    margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+    padding-top: 4%;
+    padding-bottom: 2%;
+    background: #ffc84d;
 }
 
-/* Style the submit button with a specific background color etc */
 
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
+.kontaktform form {}
+
+/*--------- kontakt form ---------*/
+
+.myform {
+    margin: 0 auto;
+    width: 60%;
+    padding: 14px;
+}
+
+/* ----------- basic ----------- */
+
+#basic {
+    border: solid 2px #DEDEDE;
+}
+
+#basic h1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#basic p {
+    font-size: 11px;
+    color: #666666;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #dedede;
+    padding-bottom: 10px;
+}
+
+#basic label {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    width: 140px;
+    float: left;
+}
+
+#basic .small {
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+    width: 140px;
+}
+
+#basic input {
+    float: left;
+    width: 200px;
+    margin: 2px 0 30px 10px;
+}
+
+#basic button {
+    clear: both;
+    margin-left: 150px;
+    background: #888888;
+    color: #FFFFFF;
+    border: solid 1px #666666;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 6px;
+}
+
+
+/* ----------- stylized ----------- */
+
+#stylized {
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    background: #ffc84d;
+
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-
-input[type=submit]:hover {
-    background-color: #45a049;
+#stylized h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    text-align: center;
 }
 
+#stylized h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+#stylized p {
+    font-size: 11px;
+    color: #666666;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+#stylized label {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    width: 140px;
+    float: left;
+    line-height: 34px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+#stylized .small {
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+    width: 140px;
+}
+
+#stylized input {
+    float: left;
+    font-size: 12px;
+    padding: 4px 2px;
+    border: none;
+    width: 70%;
+    border-bottom: 1px solid #FFFFFF;
+    background: #ffc84d;
+    margin: 2px 0 20px 10px;
+}
+
+#stylized textarea {
+    float: left;
+    font-size: 12px;
+    padding: 4px 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #FFFFFF;
+    width: 70%;
+    background: #ffc84d;
+    margin: 2px 0 20px 10px;
+}
+
+#stylized button {
+    clear: both;
+    width: 125px;
+    height: 31px;
+    border: none;
+    background: #6A90FF;
+    text-align: center;
+    line-height: 31px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+}
 
 
 
@@ -1307,14 +1409,14 @@ input[type=submit]:hover {
 
 .shop_koeb h1 {
     text-align: center;
-    background-color: #b7c9ff;
+    background-color: #ffc84d;
     padding-top: 4%;
     padding-bottom: 4%;
 }
 
 .shop_koeb h2 {
     text-align: center;
-    background-color: #6A90FF;
+    background-color: #ffb000;
     padding-top: 4%;
     padding-bottom: 4%;
     margin-top: 8%;
@@ -1335,129 +1437,4 @@ input[type=submit]:hover {
 
 #submission {
     text-align: center;
-}
-
-
-/*--------- Spørgsmål form ---------*/
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="emne"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"] {}
-
-#contact {
-    background: white;
-    width: 50%;
-    margin: 0px auto;
-    padding: 5%;
-}
-
-#contact h1 {
-    color: #12369D;
-    display: block;
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center;
-}
-
-#contact h4 {
-    margin: 5px 0 15px;
-    display: block;
-    font-size: 1em;
-    font-weight: 400;
-    text-align: center;
-}
-
-fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-
-}
-
-#contact input[type="text"],
-#contact input[type="url"],
-#contact textarea {
-    width: 95%;
-    border: 1px solid #CCC;
-    background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-}
-
-#contact input[type="email"],
-#contact input[type="emne"],
-#contact input[type="tel"] {
-    width: 92%;
-    border: 1px solid #CCC;
-    background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="emne"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border: 1px solid #AAA;
-}
-
-#contact textarea {
-    height: 100px;
-    max-width: 100%;
-    resize: none;
-}
-
-#contact button[type="submit"] {
-    cursor: pointer;
-    width: 16%;
-    border: none;
-    background: #12369D;
-    color: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px;
-}
-
-#contact button[type="submit"]:hover {
-    background: #09C;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-#contact input:focus,
-#contact textarea:focus {
-    outline: 0;
-    border: 1px solid #999;
-}
-
-::-webkit-input-placeholder {
-    color: #888;
-}
-
-:-moz-placeholder {
-    color: #888;
-}
-
-::-moz-placeholder {
-    color: #888;
-}
-
-:-ms-input-placeholder {
-    color: #888;
 }

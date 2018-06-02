@@ -29,7 +29,7 @@
                 <i class="fa fa-bars"></i></a>
         </div>
         <section id="SoMe" class="top">
-            <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" class="button">SHOP</a></p>
+            <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" id="myBtn">SHOP</a></p>
         </section>
     </header>
     <main style="background: white;">
@@ -75,30 +75,33 @@
                          </ul></div>
            </div>
 
-                <div class="container_1fr">
-            <form id="contact" action="" method="post">
+               <div class="kontaktform">
+            <div id="stylized" class="myform">
                 <h1>Har du nogle spørgsmål?</h1>
                 <h4>Du er velkommen til at kontakte os i dag. Vi svarer inden for 24 timer!</h4>
-                <fieldset>
-                    <input placeholder="DIT NAVN" type="text" tabindex="1" required autofocus>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="DIN E-MAIL" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="TELEFON" type="tel" tabindex="3" required>
-                </fieldset>
-                     <fieldset>
-                    <input placeholder="EMNE" type="emne" tabindex="3" required>
-                </fieldset>
-                <fieldset>
-                    <textarea placeholder="BESKED" tabindex="5" required></textarea>
-                </fieldset>
-                <fieldset>
-                    <p id="submission"><button name="submit" type="submit" class="button" data-submit="...Sending">SEND</button></p>
-                </fieldset>
-            </form>
-           </div>
+                <form id="form1" id="form1" action="mail.php" method="POST">
+                    <label>NAVN
+<!--                        <span class="small">Add your name</span>-->
+                    </label>
+                    <input type="text" name="name" value="">
+                    <label>E-MAIL
+<!--                        <span class="small">Enter a Valid Email</span>-->
+                    </label>
+                    <input type="text" name="email" value="">
+                    <label>TELEFON
+<!--                        <span class="small">Add a Phone Number</span>-->
+                    </label>
+                    <input type="text" name="phone" value="">
+                    <label>BESKED
+<!--                        <span class="small">Type Your Message</span>-->
+                    </label>
+                    <textarea name="message" rows="6" cols="25" value="besked"></textarea><br />
+                    <p id="submission"><button type="submit" value="Send" style="margin-top:15px;">SEND</button></p>
+                    <div class="spacer"></div>
+                </form>
+
+            </div>
+        </div>
 
            </article>
             </template>
@@ -195,7 +198,6 @@
             })
         }
         document.addEventListener("DOMContentLoaded", hentJson);
-
     </script>
 </body>
 

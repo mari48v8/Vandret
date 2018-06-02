@@ -29,7 +29,7 @@
                 <i class="fa fa-bars"></i></a>
         </div>
         <section id="SoMe" class="top">
-            <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" class="button">SHOP</a></p>
+            <p id="SoMe_tx">Flasker! Op til 25% Rabat ved første køb<a href="#" id="myBtn">SHOP</a></p>
         </section>
     </header>
     <main>
@@ -40,32 +40,45 @@
                    <div class="kontakter" style="margin-top:5%;">
                    <h1>Kontakt</h1>
 
-            <div class="kontakttekst"><span>Telefon:</span><p id="data-telefon"></p></div>
-           <div class="kontakttekst"><span>Mail:</span><p id="data-mail"></p></div>
-           <div class="kontakttekst"><span>Facebook:</span><p id="data-facebook"></p></div>
-           <div class="kontakttekst"><span>Instagram:</span><p id="data-instagram"></p></div>
-                       <div class="kontakttekst"><span>LinkedIn:</span><p id="data-linkedin"></p></div></div>
+            <div class="kontakttekst">
+            <span>Telefon:</span><p id="data-telefon"></p>
+           <span>Mail:</span><p id="data-mail"></p>
+           <span>Facebook:</span><p id="data-facebook"></p>
+           <span>Instagram:</span><p id="data-instagram"></p>
+          <span>LinkedIn:</span><p id="data-linkedin"></p></div>
+
+                       <div class="kontakt-social"><a href="mailto:info@vandretflasker.dk" style="margin-right:5px;" target="_blank"><img src="img/vandret-10.png" class="icons"></a><a href="https://www.facebook.com/vandretflasker" target="_blank"><img src="img/vandret-06.png" class="icons"></a><a href="https://www.instagram.com/vandretflasker/" target="_blank"><img src="img/vandret-05.png" class="icons"></a><a href="https://www.linkedin.com/company/vandret/" style="margin-left: 5px;" target="_blank"><img src="img/vandret-07.png" class="icons"></a></div></div>
 
        </article>
     </template>
 
 
         <div class="kontaktform" style="margin-top:5%;">
-            <form action="action_page.php">
+            <div id="stylized" class="myform">
+                <h1>Har du nogle spørgsmål?</h1>
+                <h4>Du er velkommen til at kontakte os i dag. Vi svarer inden for 24 timer!</h4>
+                <form id="form1" id="form1" action="mail.php" method="POST">
+                    <label>NAVN
+<!--                        <span class="small">Add your name</span>-->
+                    </label>
+                    <input type="text" name="name" value="">
+                    <label>E-MAIL
+<!--                        <span class="small">Enter a Valid Email</span>-->
+                    </label>
+                    <input type="text" name="email" value="">
+                    <label>TELEFON
+<!--                        <span class="small">Add a Phone Number</span>-->
+                    </label>
+                    <input type="text" name="phone" value="">
+                    <label>BESKED
+<!--                        <span class="small">Type Your Message</span>-->
+                    </label>
+                    <textarea name="message" rows="6" cols="25" value="besked"></textarea><br />
+                    <p id="submission"><button type="submit" value="Send" style="margin-top:15px;">SEND</button></p>
+                    <div class="spacer"></div>
+                </form>
 
-                <label for="fname">Fornavn</label>
-                <input type="text" id="fname" name="firstname" placeholder="Fornavn..">
-
-                <label for="lname">Efternavn</label>
-                <input type="text" id="lname" name="lastname" placeholder="Efternavn..">
-
-
-                <label for="subject">Besked</label>
-                <textarea id="subject" name="subject" placeholder="Skriv besked.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-
-            </form>
+            </div>
         </div>
     </main>
     <footer>
