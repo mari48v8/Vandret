@@ -19,8 +19,25 @@ function visRestauranter() {
         let klon = minTemplate.cloneNode(true).content;
 
         klon.querySelector("#data-titel").textContent = element.acf.titel;
+        klon.querySelector("#data-stifter").textContent = element.acf.stifter;
+        klon.querySelector("#data-titel_02").textContent = element.acf.titel_02;
+        klon.querySelector("#data-titel_03").textContent = element.acf.titel_03;
+        klon.querySelector("#data-titel_04").textContent = element.acf.titel_04;
         klon.querySelector("#data-tekst").textContent = element.acf.tekst;
+        klon.querySelector("#data-tekst_02").textContent = element.acf.tekst_02;
+        klon.querySelector("#data-tekst_03").textContent = element.acf.tekst_03;
+        klon.querySelector("#data-tekst_04").textContent = element.acf.tekst_04;
+        klon.querySelector("#data-tekst_05").textContent = element.acf.tekst_05;
+        klon.querySelector("#data-tekst_06").textContent = element.acf.tekst_06;
+        klon.querySelector("#data-tekst_07").textContent = element.acf.tekst_07;
+        klon.querySelector("#data-tekst_08").textContent = element.acf.tekst_08;
+        klon.querySelector("#data-tekst_09").textContent = element.acf.tekst_09;
         klon.querySelector("#data-billede").src = element.acf.billede.url;
+        klon.querySelector("#data-billede_02").src = element.acf.billede_02.url;
+        klon.querySelector("#data-billede_03").src = element.acf.billede_03.url;
+        klon.querySelector("#data-billede_04").src = element.acf.billede_04.url;
+        klon.querySelector("#data-billede_05").src = element.acf.billede_05.url;
+        klon.querySelector("#data-billede_06").src = element.acf.billede_06.url;
         document.querySelector("#modtager").appendChild(klon);
         templateModtager.appendChild(klon)
     })

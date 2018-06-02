@@ -119,6 +119,10 @@ h6,
     font-size: 1rem;
 }
 
+.left {
+    text-align: left;
+}
+
 /****************** Media Queries *******************/
 
 .container {
@@ -360,6 +364,26 @@ video {
 
 }
 
+.icons_02 {
+    width: 50%;
+    height: auto;
+    padding-left: 18%;
+
+}
+
+.icons_03 {
+    width: 67%;
+    height: auto;
+    margin-top: 12%;
+    padding-left: 10%;
+}
+
+.icons_04 {
+    width: 60%;
+    height: auto;
+    margin-top: 12%;
+    padding-left: 11%;
+}
 
 .icons:first-child {
     width: 30px;
@@ -492,6 +516,19 @@ video {
     cursor: pointer;
 }
 
+.button_koeb {
+    background-color: #ffc84d;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: -4%;
+}
+
 /*
 .top {
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
@@ -524,14 +561,13 @@ video {
 }
 
 .content {
-    bottom: 0;
     color: #12369D;
     position: relative;
     padding: 20px;
-    width: 440px;
-    top: -296px;
-    /* float: right; */
-    left: 800px;
+    width: 462px;
+    top: -390px;
+    text-align: center;
+    margin: 0px auto;
 }
 
 #myBtn {
@@ -875,8 +911,8 @@ video {
 /******************animerend flaskevand*******************/
 
 #bottlewater {
-    width: 351.99874px;
-    height: 678.954331px;
+    width: 351px;
+    height: 678px;
     z-index: 2;
 
 }
@@ -884,8 +920,8 @@ video {
 #bottlewater_sprite {
     background-image: url(img/flaske_animation.png);
     background-size: 300%;
-    width: 351.99874px;
-    height: 678.954331px;
+    width: 351px;
+    height: 678px;
 
 }
 
@@ -1010,13 +1046,25 @@ video {
 
 #omos-wrapper h1 {
     text-align: center;
-    margin-top: 10%;
-    padding-bottom: 2%;
+    text-align: center;
+    margin-top: 4%;
+    padding-bottom: 4%;
 }
+
+#omos-wrapper p {}
 
 #omosimg {
     width: 50%;
     margin: 0 auto;
+}
+
+.os_pic {
+    width: 59%;
+}
+
+.stifter {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 
@@ -1382,6 +1430,10 @@ input[type=submit]:hover {
 
 /******************************************************************  koeb.html  *****************************************************************/
 
+#shop {
+    width: 90%;
+}
+
 #shop_h1 {
     text-align: center;
     padding-top: 4%;
@@ -1390,21 +1442,32 @@ input[type=submit]:hover {
 
 #shop_p {
     text-align: center;
+    margin-top: -1%;
+    font-size: 1.4em;
+    line-height: 0.9em;
+    padding-bottom: 7%;
+}
+
+#shop_manchet {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.4em;
+    line-height: 0.9em;
     padding-bottom: 2%;
 }
 
-#shop_left {
-    /*    background-color: chocolate;*/
-}
+
+#shop_left {}
 
 #shop_right {
-    padding-left: 6%;
-    padding-right: 12%;
+    padding: 0;
+
     /*    background-color: brown;*/
 }
 
 .shop_koeb {
-    /*    background-color: brown;*/
+    margin-right: 10%;
+    background: #b7c9ff;
 }
 
 .shop_koeb h1 {
@@ -1419,19 +1482,63 @@ input[type=submit]:hover {
     background-color: #ffb000;
     padding-top: 4%;
     padding-bottom: 4%;
-    margin-top: 8%;
     margin-bottom: 0;
 }
 
 .shop_koeb p {
-    padding: 6%;
-    /*    background-color: brown;*/
+    padding-top: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 6%;
+    margin-top: 0;
 }
 
 .shop_koeb .button {
     width: 75px;
     text-align: center;
     margin: 0 auto;
+
+}
+
+.shop_koeb_02 {
+    margin-right: 10%;
+    background: #b7c9ff;
+}
+
+.shop_koeb_02 {
+    padding-right: 0;
+    background-color: #ffd882;
+}
+
+.shop_koeb_02 h1 {
+    text-align: center;
+    background-color: #ffc84d;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.shop_koeb_02 h2 {
+    text-align: center;
+    background-color: #ffb000;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 0;
+}
+
+.shop_koeb_02 p {
+    margin-top: 0;
+    padding-top: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 6%;
+    /*    background-color: brown;*/
+}
+
+.shop_koeb_02 .button {
+    width: 75px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -4%;
 
 }
 

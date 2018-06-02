@@ -36,18 +36,19 @@
         <section id="modtager"></section>
         <template id="myTemplate">
        <article>
+         <img class="center" src="img/Artboard%201.png">
         <h1 id="shop_h1" data-titel></h1>
         <p id="shop_p" data-tekst></p>
         <div class="container_med_padding">
             <div>
-                <div class="container">
+                <div class="container" id="shop">
                     <div id="shop_left">
-                        <img class="shop_img" src="" data-billede>
-                    </div>
-                    <div id="shop_right">
                         <h4 data-underrubrik></h4>
                         <hr>
                         <p data-tekst_02></p>
+                    </div>
+                     <div id="shop_right">
+                        <img class="shop_img" src="" data-billede>
                     </div>
                 </div>
                 <div class="container_1fr">
@@ -60,7 +61,7 @@
                 </div>
             </div>
             <div>
-                <div class="container">
+                <div class="container" id="shop">
                     <div id="shop_left">
                         <img class="shop_img" src="" data-billede_02>
                     </div>
@@ -71,7 +72,7 @@
                     </div>
                 </div>
                 <div class="container_1fr">
-                    <div class="shop_koeb">
+                    <div class="shop_koeb_02">
                         <h2 data-underrubrik_04></h2>
                         <h1 data-titel_03></h1>
                         <p data-tekst_05></p>
@@ -80,8 +81,8 @@
                 </div>
             </div>
         </div>
-        <p id="shop_p" data-tekst_06></p>
-        <p id="submission"><input style="margin-bottom:6%;" class="button" type="button" onclick="location.href='fragt.html';" value="Betingelserne" /></p>
+        <p id="shop_manchet" data-tekst_06></p>
+        <p id="submission"><input style="margin-bottom:6%;" class="button_koeb" type="button" onclick="location.href='fragt.html';" value="Betingelserne" /></p>
             </article>
         </template>
 
@@ -173,6 +174,7 @@
             })
         }
         document.addEventListener("DOMContentLoaded", hentJson);
+
     </script>
 </body>
 
