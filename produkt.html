@@ -11,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="video/6/js-image-slider.css" rel="stylesheet" type="text/css" />
-    <script src="video/6/mcVideoPlugin.js" type="text/javascript"></script>
-    <script src="video/6/js-image-slider.js" type="text/javascript"></script>
+    <script src="video/6/mcVideoPlugin.js"></script>
+    <script src="video/6/js-image-slider.js"></script>
 
 </head>
 
 <body>
     <header>
-        <section id="header-top"><a href="https://www.linkedin.com/company/vandret/" target="_blank"><img src="img/vandret-07.png" class="icons"></a><a href="https://www.facebook.com/vandretflasker" target="_blank"><img src="img/vandret-06.png" class="icons"></a><a href="https://www.instagram.com/vandretflasker/" target="_blank"><img src="img/vandret-05.png" class="icons"></a><a href=""><img src="img/vandret-08.png" class="cart"></a><img src="img/vandret_logo.png" class="logo"></section>
+        <section id="header-top"><a href="https://www.linkedin.com/company/vandret/" target="_blank"><img src="img/vandret-07.png" class="icons" alt="vandret_07"></a><a href="https://www.facebook.com/vandretflasker" target="_blank"><img src="img/vandret-06.png" class="icons" alt="vandret_06"></a><a href="https://www.instagram.com/vandretflasker/" target="_blank"><img src="img/vandret-05.png" class="icons" alt="vandret_05"></a><a href=""><img src="img/vandret-08.png" class="cart" alt="cart"></a><img src="img/vandret_logo.png" class="logo" alt="vandret_logo"></section>
         <div class="topnav" id="navbar">
             <a href="index.html">Forside</a>
             <a href="omos.html">Om os</a>
@@ -39,24 +39,24 @@
 
        <article>
         <div class="container_med_padding" style="margin-top:5%;">
-           <div id="pro">
+           <div class="pro">
                 <img  class="pro_small_img" src="" data-billede>
-                <h1 style="margin-top:15%;"class="centerText" data-titel_01></h1>
+                <h1 style="margin-top:15%;" class="centerText" data-titel_01></h1>
                 <p data-tekst></p></div>
-           <div id="pro">
+           <div class="pro">
                 <h1 class="centerText" data-titel_02></h1>
                 <p data-tekst_02></p>
                 <img  class="pro_03_img" src="" data-billede_02></div>
-           <div id="pro" style="margin-bottom:16%;" >
+           <div class="pro" style="margin-bottom:16%;" >
                <img  class="pro_02_img" src="" data-billede_03> </div>
-               <div id="pro">
+               <div class="pro">
                <h1 class="centerText" data-titel_03></h1>
                <p data-tekst_03></p></div>
           </div>
 
                 <h1 style="background-color:#b7c9ff;" class="center" data-titel_09>Værd at vide om flasken</h1>
-           <div style="background-color:#b7c9ff;"class="container_med_padding">
-                     <div id="pro">
+           <div style="background-color:#b7c9ff;" class="container_med_padding">
+                     <div class="pro">
                     <ul>
                 <li data-titel_04></li>
                     <p data-tekst_04></p>
@@ -64,7 +64,7 @@
                     <p data-tekst_05></p>
                          </ul>
                         </div>
-                   <div id="pro">
+                   <div class="pro">
                <ul>
                 <li data-titel_06></li>
                     <p data-tekst_06></p>
@@ -79,7 +79,7 @@
             <div id="stylized" class="myform">
                 <h1>Har du nogle spørgsmål?</h1>
                 <h4>Du er velkommen til at kontakte os i dag. Vi svarer inden for 24 timer!</h4>
-                <form id="form1" id="form1" action="mail.php" method="POST">
+                <form id="form1" action="mail.php" method="POST">
                     <label>NAVN
 <!--                        <span class="small">Add your name</span>-->
                     </label>
@@ -96,7 +96,7 @@
 <!--                        <span class="small">Type Your Message</span>-->
                     </label>
                     <textarea name="message" rows="6" cols="25" value="besked"></textarea><br />
-                    <p id="submission"><button type="submit" value="Send" style="margin-top:15px;">SEND</button></p>
+                    <p class="submission"><button type="submit" value="Send" style="margin-top:15px;">SEND</button></p>
                     <div class="spacer"></div>
                 </form>
 
@@ -121,11 +121,11 @@
             <div id="siderne">
                 <h2>Siderne</h2>
                 <ul>
-                    <li><a href>Forside</a></li>
-                    <li><a href>Om os</a></li>
-                    <li><a href>Produkt</a></li>
-                    <li><a href>Køb</a></li>
-                    <li><a href>Kontakt</a></li>
+                    <li><a href="">Forside</a></li>
+                    <li><a href="">Om os</a></li>
+                    <li><a href="">Produkt</a></li>
+                    <li><a href="">Køb</a></li>
+                    <li><a href="">Kontakt</a></li>
                 </ul>
             </div>
             <div id="nyhedsbrev">
@@ -198,7 +198,6 @@
             })
         }
         document.addEventListener("DOMContentLoaded", hentJson);
-
     </script>
 </body>
 

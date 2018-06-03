@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="video/6/js-image-slider.css" rel="stylesheet" type="text/css" />
-    <script src="video/6/mcVideoPlugin.js" type="text/javascript"></script>
-    <script src="video/6/js-image-slider.js" type="text/javascript"></script>
+    <script src="video/6/mcVideoPlugin.js"></script>
+    <script src="video/6/js-image-slider.js"></script>
 
 </head>
 
 <body>
     <header>
-        <section id="header-top"><a href="https://www.linkedin.com/company/vandret/" target="_blank"><img src="img/vandret-07.png" class="icons"></a><a href="https://www.facebook.com/vandretflasker" target="_blank"><img src="img/vandret-06.png" class="icons"></a><a href="https://www.instagram.com/vandretflasker/" target="_blank"><img src="img/vandret-05.png" class="icons"></a><a href=""><img src="img/vandret-08.png" class="cart"></a><img src="img/vandret_logo.png" class="logo"></section>
+        <section id="header-top"><a href="https://www.linkedin.com/company/vandret/" target="_blank"><img src="img/vandret-07.png" class="icons" alt="vandret_07"></a><a href="https://www.facebook.com/vandretflasker" target="_blank"><img src="img/vandret-06.png" class="icons" alt="vandret_06"></a><a href="https://www.instagram.com/vandretflasker/" target="_blank"><img src="img/vandret-05.png" class="icons" alt="vandret_o5"></a><a href=""><img src="img/vandret-08.png" class="cart" alt="cart"></a><img src="img/vandret_logo.png" class="logo" alt="vandret_logo"></section>
         <div class="topnav" id="navbar">
             <a href="index.html">Forside</a>
             <a href="omos.html">Om os</a>
@@ -37,17 +37,17 @@
         <template id="myTemplate">
        <article>
          <img class="center" src="img/Artboard%201.png">
-        <h1 id="shop_h1" data-titel></h1>
-        <p id="shop_p" data-tekst></p>
+        <h1 class="shop_h1" data-titel></h1>
+        <p class="shop_p" data-tekst></p>
         <div class="container_med_padding">
             <div>
                 <div class="container" id="shop">
-                    <div id="shop_left">
+                    <div class="shop_left">
                         <h4 data-underrubrik></h4>
                         <hr>
                         <p data-tekst_02></p>
                     </div>
-                     <div id="shop_right">
+                     <div class="shop_right">
                         <img class="shop_img" src="" data-billede>
                     </div>
                 </div>
@@ -70,16 +70,16 @@ document.getElementById('minus').onclick = function(){
     input.value = parseInt(input.value, 10) -1
 }
 </script>
-                        <p id="submission"><input class="button" type="Køb" value="Læg i kurv" /></p>
+                        <p class="submission"><input class="button" type="Køb" value="Læg i kurv" /></p>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="container" id="shop">
-                    <div id="shop_left">
+                    <div class="shop_left">
                         <img class="shop_img" src="" data-billede_02>
                     </div>
-                    <div id="shop_right">
+                    <div class="shop_right">
                         <h4 data-underrubrik_03></h4>
                         <hr>
                         <p data-tekst_04></p>
@@ -94,14 +94,14 @@ document.getElementById('minus').onclick = function(){
   <input id="minus" type="button" class="minus" value="-">
   <input id="theInput" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
   <input id="plus" type="button" class="plus" value="+">
-</div><p id="submission"><input class="button" type="Køb" value="Læg i kurv" /></p>
+</div><p class="submission"><input class="button" type="Køb" value="Læg i kurv" /></p>
                     </div>
 
                 </div>
             </div>
         </div>
-        <p id="shop_manchet" data-tekst_06></p>
-        <p id="submission"><input style="margin-bottom:6%;" class="button_koeb" type="button" onclick="location.href='fragt.html';" value="Betingelserne" /></p>
+        <p class="shop_manchet" data-tekst_06></p>
+        <p class="submission"><input style="margin-bottom:6%;" class="button_koeb" type="button" onclick="location.href='fragt.html';" value="Betingelserne" /></p>
             </article>
         </template>
 
@@ -121,11 +121,11 @@ document.getElementById('minus').onclick = function(){
             <div id="siderne">
                 <h2>Siderne</h2>
                 <ul>
-                    <li><a href>Forside</a></li>
-                    <li><a href>Om os</a></li>
-                    <li><a href>Produkt</a></li>
-                    <li><a href>Køb</a></li>
-                    <li><a href>Kontakt</a></li>
+                    <li><a href="">Forside</a></li>
+                    <li><a href="">Om os</a></li>
+                    <li><a href="">Produkt</a></li>
+                    <li><a href="">Køb</a></li>
+                    <li><a href="">Kontakt</a></li>
                 </ul>
             </div>
             <div id="nyhedsbrev">

@@ -4,16 +4,11 @@
     box-sizing: inherit;
 }
 
-@-ms-viewport {
-    width: device-width;
-}
 
 html {
     font-family: sans-serif;
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -ms-overflow-style: scrollbar;
+
 }
 
 header,
@@ -644,8 +639,8 @@ video {
 
 #design_container {
     width: 100%;
-    display: grid;
-    grid-template-columns: 2;
+
+
 
 }
 
@@ -691,7 +686,7 @@ video {
     z-index: 2;
     width: 15%;
     left: 5%;
-    top: -8%;
+    top: 0%;
 }
 
 .Frostfri-infografik {
@@ -730,36 +725,14 @@ video {
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-    -webkit-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
-    -moz-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
-    -ms-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
     animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
 .pulse-button:hover {
-    -webkit-animation: none;
-    -moz-animation: none;
-    -ms-animation: none;
+
     animation: none;
 }
 
-@-webkit-keyframes pulse {
-    to {
-        box-shadow: 0 0 0 45px rgba(106, 144, 255, 0);
-    }
-}
-
-@-moz-keyframes pulse {
-    to {
-        box-shadow: 0 0 0 45px rgba(106, 144, 255, 0);
-    }
-}
-
-@-ms-keyframes pulse {
-    to {
-        box-shadow: 0 0 0 45px rgba(106, 144, 255, 0);
-    }
-}
 
 @keyframes pulse {
     to {
@@ -944,8 +917,7 @@ video {
     animation-duration: 3s;
     animation-timing-function: steps(3);
     animation-iteration-count: infinite;
-    animation-direction: towards;
-
+    /*    animation-direction:;*/
 }
 
 @keyframes bottlewater_walkcycle_kf {
@@ -1358,12 +1330,12 @@ input[type=submit]:hover {
 
 /******************************************************************  Produkt.html  *****************************************************************/
 
-#pro {
+.pro {
     margin-top: 4%;
     padding: 2%;
 }
 
-#pro:after {
+.pro:after {
     content: ".";
     display: block;
     height: 0;
@@ -1371,7 +1343,7 @@ input[type=submit]:hover {
     visibility: hidden;
 }
 
-#pro h1 {
+.pro h1 {
     margin-top: 4%;
     padding-bottom: 4%;
     font-size: 2.2rem;
@@ -1444,17 +1416,17 @@ input[type=submit]:hover {
 
 /******************************************************************  koeb.html  *****************************************************************/
 
-#shop {
+.shop {
     width: 90%;
 }
 
-#shop_h1 {
+.shop_h1 {
     text-align: center;
     padding-top: 4%;
     padding-bottom: 2%;
 }
 
-#shop_p {
+.shop_p {
     text-align: center;
     margin-top: -1%;
     font-size: 1.4em;
@@ -1462,7 +1434,7 @@ input[type=submit]:hover {
     padding-bottom: 7%;
 }
 
-#shop_manchet {
+.shop_manchet {
     text-align: center;
     margin-top: 5%;
     font-size: 1.4em;
@@ -1471,9 +1443,9 @@ input[type=submit]:hover {
 }
 
 
-#shop_left {}
+.shop_left {}
 
-#shop_right {
+.shop_right {
     padding: 0;
 
     /*    background-color: brown;*/
@@ -1556,7 +1528,7 @@ input[type=submit]:hover {
 
 }
 
-#submission {
+.submission {
     text-align: center;
 }
 
