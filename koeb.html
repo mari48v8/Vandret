@@ -56,20 +56,7 @@
                         <h2 style="background-color: #1746cc; color: white;" data-underrubrik_02></h2>
                         <h1 style="background: #9db6ff;" data-titel_02></h1>
                         <p data-tekst_03></p>
-                                    <div class="quantity buttons_added">
-  <input id="minus" type="button" class="minus" value="-">
-  <input id="theInput" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
-  <input id="plus" type="button" class="plus" value="+">
-</div>
-                       <script>
-var input = document.getElementById('theInput');
-document.getElementById('plus').onclick = function(){
-    input.value = parseInt(input.value, 10) +1
-}
-document.getElementById('minus').onclick = function(){
-    input.value = parseInt(input.value, 10) -1
-}
-</script>
+
                         <p class="submission"><input class="button" type="Køb" value="Læg i kurv" /></p>
                     </div>
                 </div>
@@ -90,11 +77,7 @@ document.getElementById('minus').onclick = function(){
                         <h2 data-underrubrik_04></h2>
                         <h1 data-titel_03></h1>
                         <p data-tekst_05></p>
-                      <div class="quantity buttons_added">
-  <input id="minus" type="button" class="minus" value="-">
-  <input id="theInput" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
-  <input id="plus" type="button" class="plus" value="+">
-</div><p class="submission"><input class="button" type="Køb" value="Læg i kurv" /></p>
+    <p class="submission"><input class="button" type="Køb" value="Læg i kurv" /></p>
                     </div>
 
                 </div>
@@ -193,6 +176,7 @@ document.getElementById('minus').onclick = function(){
             })
         }
         document.addEventListener("DOMContentLoaded", hentJson);
+
     </script>
 
 </body>

@@ -354,7 +354,20 @@ h6,
         line-height: 1.2em;
         padding: 0.5em 2em 0.5em 3em;
     }
+    #stylized input {
+        width: 91%;
 
+    }
+
+    #stylized textarea {
+        width: 91%;
+
+
+    }
+    #omos-wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 @media (min-width: 576px) {
@@ -506,6 +519,20 @@ h6,
         margin: 0;
         line-height: 1.2em;
         padding: 0.5em 2em 0.5em 3em;
+    }
+    #stylized input {
+        width: 91%;
+
+    }
+
+    #stylized textarea {
+        width: 91%;
+
+
+    }
+    #omos-wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
 
@@ -703,6 +730,21 @@ h6,
         line-height: 1.2em;
         padding: 0.5em 2em 0.5em 3em;
     }
+    #stylized input {
+        width: 70%;
+
+    }
+
+    #stylized textarea {
+        width: 70%;
+
+
+    }
+    #omos-wrapper {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
 }
 
 
@@ -898,6 +940,20 @@ h6,
         margin: 0.5em;
         line-height: 1.2em;
         padding: 0.5em 2em 0.5em 3em;
+    }
+    #stylized input {
+        width: 70%;
+
+    }
+
+    #stylized textarea {
+        width: 70%;
+
+
+    }
+    #omos-wrapper {
+        padding-left: 20%;
+        padding-right: 20%;
     }
 
 }
@@ -1095,7 +1151,20 @@ h6,
         line-height: 1.2em;
         padding: 0.5em 2em 0.5em 3em;
     }
+    #stylized input {
+        width: 70%;
 
+    }
+
+    #stylized textarea {
+        width: 70%;
+
+
+    }
+    #omos-wrapper {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 
 }
 
@@ -1729,11 +1798,6 @@ video {
 
 /******************om os*******************/
 
-#omos-wrapper {
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
 #omos-wrapper h1 {
     text-align: center;
     text-align: center;
@@ -1895,7 +1959,6 @@ video {
     font-size: 12px;
     padding: 4px 2px;
     border: none;
-    width: 70%;
     border-bottom: 1px solid #FFFFFF;
     background: #ffc84d;
     margin: 2px 0 20px 10px;
@@ -1909,7 +1972,6 @@ video {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid #FFFFFF;
-    width: 70%;
     background: #ffc84d;
     margin: 2px 0 20px 10px;
 }
