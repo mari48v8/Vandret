@@ -162,6 +162,7 @@ h6,
 }
 
 @media (max-width: 575px) {
+
     .container_1fr {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -176,11 +177,188 @@ h6,
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    .container_med_padding {
+        /*        background-color: aqua;*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #SoMe {
+        display: none;
+    }
+    #video_bg {
+        display: none;
+    }
+    #uden-video {
+        display: block;
+    }
+    #video {
+        display: none;
+    }
+    #design {
+        display: grid;
+        padding-bottom: 250px;
+    }
 
+    .content {
+        top: -154px;
+        padding: 20px;
+        width: 285px;
+    }
+    .content h1 {
+        font-size: 1em;
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+
+    #sliderFrame {
+        margin-right: 0;
+        margin-top: 39%;
+    }
+    #slider,
+    #slider .sliderInner {
+        width: 341px;
+        height: 190px;
+
+    }
+    #omtekst h1 {
+        font-size: 1.9rem;
+    }
+    #kontaktinfo {
+        padding-top: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+    #siderne {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+    .topnav {
+        display: block;
+
+    }
+    .sticky {
+        display: none;
+    }
+    #koeb_button {
+        position: relative;
+        top: 94%;
+        left: 34%;
+        width: 35%;
+        height: 70px;
+        padding: 2%;
+    }
+    .int_img {
+        width: 37%;
+        top: 192%;
+        left: 30%;
+        position: absolute;
+    }
+    #flaske-left {
+        display: none;
+    }
+
+    #flaske-right {
+        display: none;
+    }
+
+    #pris_small {
+        position: relative;
+        top: 50%;
+        left: 24%;
+        width: 16%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+
+    #pris_big {
+        position: relative;
+        top: 50%;
+        left: 57%;
+        width: 16%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+    #design h1 {
+        max-width: 350px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding-left: 0px;
+
+    }
+
+    #design p {
+        max-width: 350px;
+        margin: 30px auto;
+        padding-left: 0px;
+    }
+    .BPAfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        left: 14%;
+        top: 41%;
+    }
+
+    .Frostfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 3;
+        width: 20%;
+        top: 216%;
+        left: -10%;
+
+
+    }
+
+    .Drypfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        height: auto;
+        left: 2%;
+        top: 60%;
+
+
+
+    }
+    .logo {
+        width: 32%;
+        margin-left: 19%;
+        margin-top: 5.7%;
+    }
+    /*--------- kontakt form ---------*/
+    .myform {
+        margin: 0 auto;
+        width: 60%;
+        padding: 14px;
+    }
+    blockquote {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        margin: 0;
+        line-height: 1.2em;
+        padding: 0.5em 2em 0.5em 3em;
+    }
 
 }
 
 @media (min-width: 576px) {
+
     .container_1fr {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -195,6 +373,141 @@ h6,
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    #video_bg {
+        display: none;
+    }
+    #uden-video {
+        display: block;
+    }
+    .content {
+        top: -390px;
+        padding: 20px;
+        width: 462px;
+    }
+    #design {
+        display: grid;
+        padding-bottom: 165px;
+
+    }
+    #design h1 {
+        max-width: 350px;
+        margin: 30px auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding-left: 0px;
+
+    }
+
+    #design p {
+        max-width: 350px;
+        margin: 30px auto;
+        padding-left: 0px;
+    }
+    #sliderFrame {
+        margin-left: 0;
+        top: 10%;
+    }
+    #slider,
+    #slider .sliderInner {
+        width: 520px;
+        height: 306px;
+
+    }
+    .topnav {
+        display: block;
+
+    }
+    .sticky {
+        display: none;
+    }
+    .int_img {
+        width: 16%;
+        top: 170%;
+        left: 60%;
+        position: absolute;
+    }
+    #flaskevand_sprite {
+        margin-top: 8%;
+    }
+
+    #pris_small {
+        position: relative;
+        top: 50%;
+        left: 24%;
+        width: 16%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+
+    #pris_big {
+        position: relative;
+        top: 50%;
+        left: 57%;
+        width: 16%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+
+    .BPAfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        left: 5%;
+        top: 0%;
+    }
+
+    .Frostfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 3;
+        width: 20%;
+        top: 65%;
+        left: -10%;
+
+
+    }
+
+    .Drypfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        height: auto;
+        top: 12%;
+        left: -6%;
+
+
+    }
+    .logo {
+        width: 20%;
+        margin-left: 29%;
+        margin-top: 0.7%;
+    }
+
+    /*--------- kontakt form ---------*/
+    .myform {
+        margin: 0 auto;
+        width: 97%;
+        padding: 14px;
+    }
+
+    blockquote {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        margin: 0;
+        line-height: 1.2em;
+        padding: 0.5em 2em 0.5em 3em;
+    }
+
 
 }
 
@@ -204,36 +517,204 @@ h6,
         /*        background-color: crimson;*/
         grid-template-columns: none;
     }
+
     .container_1fr {
         /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .container_2fr {
         /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
     .container_med_padding {
         /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
     .container_3fr {
         /*        background-color: crimson;*/
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
+    #uden-video {
+        display: none;
+    }
+    #video_bg {
+        display: grid;
+        height: 278px;
+    }
+
+    .content {
+        top: -284px;
+        padding: 20px;
+        width: 462px;
+    }
+    #design {
+        display: grid;
+        padding-bottom: 165px;
+
+    }
+
+    #design h1 {
+        max-width: 350px;
+        margin: 30px auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding-left: 36px;
+
+    }
+
+    #design p {
+        max-width: 350px;
+        margin: 30px auto;
+        padding-left: 36px;
+    }
+    #sliderFrame {
+        margin-left: 15%;
+        top: 0%;
+    }
+
+    #slider,
+    #slider .sliderInner {
+        width: 382px;
+        height: 247px;
+    }
+
+    #koeb_button {
+        position: relative;
+        top: 81%;
+        left: 82%;
+        width: 30%;
+        height: 70px;
+        padding: 2%;
+    }
+    #kontaktinfo,
+    #siderne {
+        padding-top: 11.5%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    #sliderFrame {
+        margin-left: 4%;
+        margin-right: 6%;
+        top: 0%;
+    }
+    #flaske-left {
+        /*    background-color: crimson;*/
+        /*    padding-right: 4%;*/
+    }
+
+    #flaske-right {
+        /*    background-color: darkorchid;*/
+        /*    padding-left: 4%;*/
+    }
+    .int_img {
+        width: 25%;
+        top: 106%;
+        left: 57%;
+        position: absolute;
+    }
+    #flaskevand_sprite {
+        margin-top: 9%;
+    }
+
+    #pris_small {
+        position: relative;
+        top: 50%;
+        left: 24%;
+        width: 27%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+
+    #pris_big {
+        position: relative;
+        top: 50%;
+        left: 57%;
+        width: 27%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+
+    .BPAfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        left: 5%;
+        top: 28%;
+
+    }
+
+    .Frostfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 3;
+        width: 20%;
+        top: 81%;
+        left: -10%;
+
+
+    }
+
+    .Drypfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        height: auto;
+        top: 39%;
+        left: -6%;
+
+
+    }
+
+
+    .logo {
+        width: 20%;
+        margin-left: 19%;
+        margin-top: 0.7%;
+    }
+    /*--------- kontakt form ---------*/
+    .myform {
+        margin: 0 auto;
+        width: 97%;
+        padding: 14px;
+    }
+
+    blockquote {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        margin: 0.5em;
+        line-height: 1.2em;
+        padding: 0.5em 2em 0.5em 3em;
+    }
 }
 
+
+
 @media (min-width: 992px) {
+
     .container {
-        /*        background-color: darkseagreen;*/
+
         grid-template-columns: none;
     }
     .container_1fr {
-        /*        background-color: darkseagreen;*/
+
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -268,9 +749,161 @@ h6,
         padding-left: 14%;
         /*        background-color: blueviolet;*/
     }
+    #design h1 {
+        max-width: 350px;
+        margin: 30px auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding-left: 36px;
+
+    }
+    #design {
+        display: grid;
+        padding-bottom: 165px;
+
+    }
+
+    #design p {
+        max-width: 350px;
+        margin: 30px auto;
+        padding-left: 36px;
+    }
+    #video_bg {
+        display: grid;
+        height: 362px;
+    }
+    #uden-video {
+        display: none;
+    }
+    .content {
+        top: -323px;
+        padding: 20px;
+        width: 462px;
+    }
+    #sliderFrame {
+        margin-left: 4%;
+        margin-right: 6%;
+        top: 0%;
+    }
+    #slider,
+    #slider .sliderInner {
+        width: 520px;
+        height: 306px;
+    }
+    #koeb_button {
+        position: relative;
+        top: 81%;
+        left: 92%;
+        width: 24%;
+        height: 70px;
+        padding: 2%;
+    }
+    #kontaktinfo,
+    #siderne {
+        padding-top: 11.5%;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    #flaske-left {
+        /*    background-color: crimson;*/
+        padding-right: 4%;
+    }
+
+    #flaske-right {
+        /*    background-color: darkorchid;*/
+        padding-left: 4%;
+    }
+    .int_img {
+        width: 20%;
+        top: 82%;
+        left: 56%;
+        position: absolute;
+    }
+    #flaskevand_sprite {
+        margin-top: 6%;
+    }
+
+    #pris_small {
+        position: relative;
+        top: 50%;
+        left: 24%;
+        width: 20%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+
+    #pris_big {
+        position: relative;
+        top: 50%;
+        left: 57%;
+        width: 20%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+
+    .BPAfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        left: 5%;
+        top: 13%;
+    }
+
+    .Frostfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 3;
+        width: 20%;
+        top: 79%;
+        left: -10%;
+
+
+    }
+
+    .Drypfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        height: auto;
+        top: 34%;
+        left: -11%;
+
+
+    }
+    .logo {
+        width: 20%;
+        margin-left: 29%;
+        margin-top: 0.7%;
+    }
+    /*--------- kontakt form ---------*/
+    .myform {
+        margin: 0 auto;
+        width: 60%;
+        padding: 14px;
+    }
+
+    blockquote {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        margin: 0.5em;
+        line-height: 1.2em;
+        padding: 0.5em 2em 0.5em 3em;
+    }
+
 }
 
 @media (min-width: 1200px) {
+
     .container {
         /*        background-color: darkorange;*/
         display: grid;
@@ -313,6 +946,157 @@ h6,
         padding-left: 13%;
         /*        background-color: blueviolet;*/
     }
+    #design {
+        display: grid;
+        padding-bottom: 165px;
+
+    }
+    #design h1 {
+        max-width: 350px;
+        margin: 30px auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding-left: 36px;
+
+    }
+
+    #design p {
+        max-width: 350px;
+        margin: 30px auto;
+        padding-left: 36px;
+    }
+    #video_bg {
+        display: grid;
+        height: 500px;
+    }
+    #uden-video {
+        display: none;
+    }
+    .content {
+        top: -390px;
+        padding: 20px;
+        width: 462px;
+    }
+    #sliderFrame {
+        margin-left: 15%;
+        top: 0%;
+    }
+    #slider,
+    #slider .sliderInner {
+        width: 520px;
+        height: 306px;
+    }
+    #koeb_button {
+        position: relative;
+        top: 81%;
+        left: 92%;
+        width: 21%;
+        height: 70px;
+        padding: 2%;
+    }
+    #kontaktinfo,
+    #siderne {
+        padding-top: 11.5%;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    #flaske-left {
+        /*    background-color: crimson;*/
+        padding-right: 4%;
+    }
+
+    #flaske-right {
+        /*    background-color: darkorchid;*/
+        padding-left: 4%;
+    }
+    .int_img {
+        width: 16%;
+        top: 170%;
+        left: 60%;
+        position: absolute;
+    }
+    #flaskevand_sprite {
+        margin-top: 0%;
+    }
+
+    #pris_small {
+        position: relative;
+        top: 50%;
+        left: 24%;
+        width: 16%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+
+    #pris_big {
+        position: relative;
+        top: 50%;
+        left: 57%;
+        width: 16%;
+        height: 70px;
+        padding: 2%;
+        /*    background-color: aqua;*/
+    }
+
+    .BPAfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        left: 5%;
+        top: 0%;
+    }
+
+    .Frostfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 3;
+        width: 20%;
+        top: 65%;
+        left: -10%;
+
+
+    }
+
+    .Drypfri-infografik {
+        position: relative;
+        border: none;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        z-index: 2;
+        width: 15%;
+        height: auto;
+        top: 12%;
+        left: -6%;
+
+
+    }
+    .logo {
+        width: 20%;
+        margin-left: 29%;
+        margin-top: 0.7%;
+    }
+    /*--------- kontakt form ---------*/
+    .myform {
+        margin: 0 auto;
+        width: 60%;
+        padding: 14px;
+    }
+
+    blockquote {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        margin: 0.5em;
+        line-height: 1.2em;
+        padding: 0.5em 2em 0.5em 3em;
+    }
+
+
 }
 
 .container-fluid {
@@ -321,6 +1105,10 @@ h6,
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+#uden-video {
+    width: 100%;
 }
 
 /*********** Media Queries Navigation ************************/
@@ -367,7 +1155,7 @@ video {
 /******************header-top*******************/
 
 #header-top {
-    height: 120px;
+    height: auto;
     padding-left: 40px;
     padding-bottom: 25px;
 
@@ -416,11 +1204,7 @@ video {
     margin-left: 10px;
 }
 
-.logo {
-    width: 20%;
-    margin-left: 29%;
-    margin-top: 0.7%;
-}
+
 
 /******************Navbar/Menu*******************/
 
@@ -548,11 +1332,6 @@ video {
 
 /******************Video_bg*******************/
 
-#video_bg {
-    display: grid;
-    height: 500px;
-}
-
 #video_bg:after {
     content: ".";
     display: block;
@@ -566,15 +1345,12 @@ video {
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;
+
 }
 
 .content {
     color: #12369D;
     position: relative;
-    padding: 20px;
-    width: 462px;
-    top: -390px;
     text-align: center;
     margin: 0px auto;
 }
@@ -631,12 +1407,6 @@ video {
 
 /******************Design*******************/
 
-#design {
-    display: grid;
-    padding-bottom: 165px;
-
-}
-
 #design_container {
     width: 100%;
 
@@ -652,29 +1422,9 @@ video {
     visibility: hidden;
 }
 
-#design h1 {
-    max-width: 350px;
-    margin: 30px auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    padding-left: 36px;
 
-}
-
-#design p {
-    max-width: 350px;
-    margin: 30px auto;
-    padding-left: 36px;
-}
 
 /******************Interactive_infografik*******************/
-
-.int_img {
-    width: 16%;
-    top: 170%;
-    left: 60%;
-    position: absolute;
-}
 
 /*--------- Balloon ---------*/
 
@@ -684,9 +1434,6 @@ video {
     background-color: Transparent;
     background-repeat: no-repeat;
     z-index: 2;
-    width: 15%;
-    left: 5%;
-    top: 0%;
 }
 
 .Frostfri-infografik {
@@ -695,9 +1442,7 @@ video {
     background-color: Transparent;
     background-repeat: no-repeat;
     z-index: 3;
-    width: 20%;
-    top: 65%;
-    left: -10%;
+
 
 
 }
@@ -708,10 +1453,6 @@ video {
     background-color: Transparent;
     background-repeat: no-repeat;
     z-index: 2;
-    width: 15%;
-    height: auto;
-    top: 12%;
-    left: -6%;
 
 
 }
@@ -833,14 +1574,7 @@ video {
     visibility: hidden;
 }
 
-#koeb_button {
-    position: relative;
-    top: 81%;
-    left: 92%;
-    width: 21%;
-    height: 70px;
-    padding: 2%;
-}
+
 
 #koeb_tx {
     font-size: 1.20rem;
@@ -852,36 +1586,6 @@ video {
     font-size: 1.25rem;
     margin-left: 12px;
     margin-bottom: 12px;
-}
-
-#flaske-left {
-    /*    background-color: crimson;*/
-    padding-right: 4%;
-}
-
-#flaske-right {
-    /*    background-color: darkorchid;*/
-    padding-left: 4%;
-}
-
-#pris_small {
-    position: relative;
-    top: 50%;
-    left: 24%;
-    width: 16%;
-    height: 70px;
-    padding: 2%;
-    /*    background-color: aqua;*/
-}
-
-#pris_big {
-    position: relative;
-    top: 50%;
-    left: 57%;
-    width: 16%;
-    height: 70px;
-    padding: 2%;
-    /*    background-color: aqua;*/
 }
 
 #small {
@@ -1076,13 +1780,7 @@ video {
 
 .kontaktform form {}
 
-/*--------- kontakt form ---------*/
 
-.myform {
-    margin: 0 auto;
-    width: 60%;
-    padding: 14px;
-}
 
 /* ----------- basic ----------- */
 
@@ -1240,12 +1938,7 @@ footer {
     position: relative;
 }
 
-#kontaktinfo,
-#siderne {
-    padding-top: 11.5%;
-    padding-left: 6%;
-    padding-right: 6%;
-}
+
 
 footer ul {
     list-style-type: none;
@@ -1326,6 +2019,41 @@ input[type=submit] {
 
 input[type=submit]:hover {
     opacity: 0.8;
+}
+
+/******************************************************************  index.html  *****************************************************************/
+
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+
+blockquote:before {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+
+blockquote:after {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    float: right;
+    font-size: 6em;
+    line-height: 1;
+    right: 0;
+    bottom: -0.5em;
+    content: "\201D";
+}
+
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align: right;
+    background: none;
+}
+
+blockquote cite:before {
+    content: "\2013";
 }
 
 /******************************************************************  Produkt.html  *****************************************************************/

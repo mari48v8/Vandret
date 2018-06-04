@@ -8,16 +8,13 @@
 #sliderFrame {
     width: 100%;
     /*    margin: 0 auto; center-aligned*/
-    margin-left: 20%;
-    margin-right: 6%;
-    /*    margin-top: 10%;*/
+    margin-top: 0%;
+
     margin-bottom: 10%;
 }
 
 #slider,
 #slider .sliderInner {
-    width: 520px;
-    height: 306px;
     /* Must be the same size as the slider images */
     border-radius: 6px;
 }
